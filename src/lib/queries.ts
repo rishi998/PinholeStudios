@@ -3,20 +3,31 @@ import { desc, eq } from "drizzle-orm";
 import { db } from "@/db";
 import { availability, bookingRequest, enquiry, eventLog, shortlist } from "@/db/schema";
 
+async function readOrEmpty<T>(query: Promise<T>, fallback: T): Promise<T> {
+  try {
+    return await query;
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    const missingTable = message.includes("no such table") || message.includes("SQLITE_ERROR");
+    if (missingTable || process.env.NEXT_PHASE === "phase-production-build") return fallback;
+    throw error;
+  }
+}
+
 export async function listEnquiries() {
-  return db.select().from(enquiry).orderBy(desc(enquiry.createdAt));
+  return readOrEmpty(db.select().from(enquiry).orderBy(desc(enquiry.createdAt)), []);
 }
 
 export async function enquiriesForUser(userId: string) {
-  return db.select().from(enquiry).where(eq(enquiry.userId, userId)).orderBy(desc(enquiry.createdAt));
+  return readOrEmpty(db.select().from(enquiry).where(eq(enquiry.userId, userId)).orderBy(desc(enquiry.createdAt)), []);
 }
 
 export async function listBookings() {
-  return db.select().from(bookingRequest).orderBy(desc(bookingRequest.createdAt));
+  return readOrEmpty(db.select().from(bookingRequest).orderBy(desc(bookingRequest.createdAt)), []);
 }
 
 export async function bookingsForUser(userId: string) {
-  return db.select().from(bookingRequest).where(eq(bookingRequest.userId, userId)).orderBy(desc(bookingRequest.createdAt));
+  return readOrEmpty(db.select().from(bookingRequest).where(eq(bookingRequest.userId, userId)).orderBy(desc(bookingRequest.createdAt)), []);
 }
 
 export async function availabilityFor(studioSlug?: string) {
@@ -29,11 +40,11 @@ export async function availabilityFor(studioSlug?: string) {
 }
 
 export async function shortlistFor(userId: string) {
-  return db.select().from(shortlist).where(eq(shortlist.userId, userId));
+  return readOrEmpty(db.select().from(shortlist).where(eq(shortlist.userId, userId)), []);
 }
 
 export async function recentEvents() {
-  return db.select().from(eventLog).orderBy(desc(eventLog.createdAt)).limit(200);
+  return readOrEmpty(db.select().from(eventLog).orderBy(desc(eventLog.createdAt)).limit(200), []);
 }
 
 export async function adminStats() {

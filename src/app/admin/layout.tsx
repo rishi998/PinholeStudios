@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { requireAdmin } from "@/lib/session";
 
+export const dynamic = "force-dynamic";
+
 const links = [
   ["Stats", "/admin"],
   ["Leads", "/admin/leads"],

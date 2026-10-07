@@ -7,8 +7,12 @@ import { siteUrl } from "@/lib/site-url";
 
 const googleEnabled = Boolean(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET);
 
+const authSecret =
+  process.env.BETTER_AUTH_SECRET ||
+  (process.env.NEXT_PHASE === "phase-production-build" ? "build-time-placeholder-secret-not-used-at-runtime" : undefined);
+
 export const auth = betterAuth({
-  secret: process.env.BETTER_AUTH_SECRET,
+  secret: authSecret,
   baseURL: siteUrl(),
   trustedOrigins: [siteUrl()],
   database: drizzleAdapter(db, { provider: "sqlite" }),

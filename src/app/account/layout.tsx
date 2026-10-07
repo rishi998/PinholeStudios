@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { requireUser } from "@/lib/session";
 
+export const dynamic = "force-dynamic";
+
 const links = [
   ["Overview", "/account"],
   ["Enquiries", "/account/enquiries"],
