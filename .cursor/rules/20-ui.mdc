@@ -1,0 +1,10 @@
+---
+description: UI, styling and responsive rules
+globs: ["src/components/**/*.tsx", "src/app/**/*.tsx", "src/app/globals.css"]
+alwaysApply: false
+---
+- Follow the `pinhole-design-system` skill. Use tokens (bg-background, text-foreground, bg-primary) not raw hex.
+- Mobile-first. Min touch target 44px. Inputs 16px+ font. Use dvh not vh. Respect safe-area insets.
+- Animate only transform and opacity. Honour prefers-reduced-motion. Wrap hover effects in @media (hover: hover).
+- Reuse components from src/components/ui. Do not create one-off buttons, inputs or cards.
+- Every interactive element needs a visible focus ring, accessible name, and keyboard support.

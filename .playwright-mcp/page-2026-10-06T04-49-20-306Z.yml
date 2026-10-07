@@ -1,0 +1,93 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "PINHOLE studio" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e7]: P
+        - generic [ref=e8]:
+          - generic [ref=e9]: PINHOLE
+          - generic [ref=e10]: studio
+      - navigation "Primary" [ref=e11]:
+        - link "Home" [ref=e12] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+        - button "Studios" [ref=e15]
+        - button "Services" [ref=e17]
+        - link "Work" [ref=e18] [cursor=pointer]:
+          - /url: /work
+        - link "360° Recce" [ref=e19] [cursor=pointer]:
+          - /url: /recce
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - link "Plan my shoot" [ref=e22] [cursor=pointer]:
+            - /url: /plan-my-shoot
+          - link "Chat on WhatsApp" [ref=e23] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - 'button "Theme: dark. Switch to system" [ref=e24]'
+        - button "Account" [ref=e25]
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: Kapashera Estate, New Delhi
+      - heading "A production space ready for the shoot." [level=1] [ref=e29]
+      - paragraph [ref=e30]: A professional studio and production space with ready-to-use locations and production infrastructure for shoots, content creation and events. Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097.
+      - generic [ref=e31]:
+        - link "Plan my shoot" [ref=e32] [cursor=pointer]:
+          - /url: /plan-my-shoot
+        - link "Chat on WhatsApp" [ref=e33] [cursor=pointer]:
+          - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - contentinfo [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - paragraph [ref=e37]: PINHOLE
+        - paragraph [ref=e38]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=e39] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: Contact
+        - list [ref=e42]:
+          - listitem [ref=e43]:
+            - link "+91 85069 05757" [ref=e44] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=e45]:
+            - link "+91 99997 63457" [ref=e46] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=e47]:
+            - link "+91 98186 37485" [ref=e48] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=e49]:
+            - link "pinholestudioz@gmail.com" [ref=e50] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=e51]:
+        - paragraph [ref=e52]: Brand
+        - list [ref=e53]:
+          - listitem [ref=e54]:
+            - link "Pinhole Filmcity" [ref=e55] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e56]:
+            - link "Pinhole Media" [ref=e57] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e58]:
+            - link "Pinhole Studio" [ref=e59] [cursor=pointer]:
+              - /url: /
+    - generic [ref=e60]:
+      - list [ref=e61]:
+        - listitem [ref=e62]:
+          - link "Booking T&C" [ref=e63] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=e64]:
+          - link "Events T&C" [ref=e65] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=e66]:
+          - link "Shoot / Production P&P" [ref=e67] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=e68]:
+          - link "Event P&P" [ref=e69] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=e70] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - link "Chat on WhatsApp" [ref=e74] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"

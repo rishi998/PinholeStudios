@@ -1,0 +1,8 @@
+---
+description: Sample data handling
+globs: ["src/data/**/*"]
+alwaysApply: false
+---
+- Every unverified value (specs, prices, stats, reviews, logos, policies) is marked `// SAMPLE` and exposes `isSample: true`.
+- Render a small "Sample" chip when NEXT_PUBLIC_SAMPLE_DATA_BADGE=true.
+- Do not attach invented review text to the real reviewer names.

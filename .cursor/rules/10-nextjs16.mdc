@@ -1,0 +1,11 @@
+---
+description: Next.js 16 conventions
+globs: ["src/app/**/*", "src/lib/**/*", "proxy.ts", "next.config.ts"]
+alwaysApply: false
+---
+- Use `proxy.ts` with `export function proxy`, not `middleware.ts`.
+- `params` and `searchParams` are Promises: always `await` them.
+- Server Components by default. Add "use client" only for state, effects, browser APIs, or Motion.
+- Always verify session and role on the server in pages, server actions and route handlers. proxy.ts is only an optimistic redirect.
+- Use next/image with correct `sizes`; use next/font; dynamic import heavy widgets (chat, calendar, lightbox, recce).
+- Validate every input with zod. Never expose secrets in client code.

@@ -31,6 +31,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The app is a single Next.js project. Vercel cannot store `file:./local.db`, so production uses [Turso](https://turso.tech) (libSQL).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a Turso database and run `pnpm db:push` then `pnpm db:seed` against it.
+2. Import the Git repo in Vercel. Framework preset: Next.js. Install command: `pnpm install`. Node 20 or newer.
+3. Set these environment variables for Production and Preview:
+
+| Name | Value |
+|---|---|
+| `DATABASE_URL` | `libsql://...turso.io` |
+| `DATABASE_AUTH_TOKEN` | Turso token |
+| `BETTER_AUTH_SECRET` | long random string |
+| `BETTER_AUTH_URL` | `https://your-domain.vercel.app` |
+| `NEXT_PUBLIC_SITE_URL` | same public URL |
+| `ADMIN_EMAIL` | the address that should become admin on sign-up |
+
+Preview deployments pick up their own `https://*.vercel.app` host automatically. Do not set `DATABASE_URL` to `file:./local.db` on Vercel. Google and AI keys stay optional.

@@ -1,0 +1,10 @@
+---
+description: Core project facts and non-negotiables for Pinhole Studio
+alwaysApply: true
+---
+- Project: Pinhole Studio website prototype. Stack: Next.js 16 (App Router, React 19, TypeScript strict), Tailwind v4, shadcn/ui, Motion, Better Auth, Drizzle + SQLite, Vercel AI SDK v6. Single Next.js app, no separate backend.
+- Full spec lives in @docs/BUILD_PROMPT.md. The cinematic upgrade in @docs/UPGRADE_PROMPT.md overrides it where they disagree. Follow the active phase. Never skip a phase's "Done when".
+- ALL enquiries go to WhatsApp +91 85069 05757 through `waLink()` in src/lib/whatsapp.ts (number 918506905757). Never hardcode the number elsewhere.
+- Never invent business facts. Unknown data = flagged sample data in src/data with `// SAMPLE`.
+- Use Context7 for any API you are unsure about. Do not guess library APIs.
+- After each task run: lint, type-check, build. Fix before moving on.

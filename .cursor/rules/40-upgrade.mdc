@@ -1,0 +1,15 @@
+---
+description: Cinematic upgrade overrides. Where this disagrees with the original build spec, this wins.
+alwaysApply: true
+---
+
+- Full upgrade spec: @docs/UPGRADE_PROMPT.md. It overrides @docs/BUILD_PROMPT.md. One phase U0–U8 at a time. Stop when that phase's "Done when" is met.
+- References (Archviz, Oryzo, Becky Entertainment) are principles only. Never copy their code, copy, models, textures, images, or videos.
+- All media comes from the Pexels/Pixabay/Poly Haven pipeline. No hotlinking. Record credits in docs/MEDIA_CREDITS.md. Client files in public/media/custom/ win over stock.
+- Stock photos are sample imagery until the client supplies real photos. Never caption them as "our studio". Keep the Sample chip when NEXT_PUBLIC_SAMPLE_DATA_BADGE=true.
+- Enquiries still go through waLink() to 918506905757.
+- Palette: near-black violet `--bg-0 #07060A`, not brown. Amber `#FFB020`, ember `#FF6B35`, teal `#19C3B1` used sparingly, cream `#F6F1E7` for one light section. Body text `#D3CDDB` or lighter.
+- Type: Bricolage Grotesque display, one Instrument Serif italic word per heading, Geist body, Geist Mono eyebrows. Hero `clamp(3rem, 9vw, 8.5rem)`.
+- Marketing icons: Phosphor duotone. Lucide only for tiny utility icons. WhatsApp glyph from react-icons/fa6.
+- No gradient placeholder images. 3D scenes must be designed (materials, HDRI, shadows), not loose boxes.
+- Performance and keyboard access outrank effects. One WebGL canvas at a time. Honour prefers-reduced-motion.
