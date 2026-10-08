@@ -56,7 +56,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#1c1c1c",
+  themeColor: "oklch(0.95 0.034 85)",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geist.variable} ${geistMono.variable} ${display.variable} ${serif.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="flex min-h-dvh flex-col overflow-x-clip bg-[#07060a] text-[#f6f1e7]">
+      <body className="flex min-h-dvh flex-col overflow-x-clip bg-background text-foreground">
         <AmbientBackground />
         <script
           type="application/ld+json"

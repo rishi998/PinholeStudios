@@ -57,7 +57,7 @@ export function Footer() {
         <WhatsAppLink placement="footer" size="sm" />
       </div>
       {process.env.NEXT_PUBLIC_SAMPLE_DATA_BADGE !== "false" ? (
-        <p className="mx-auto w-full max-w-7xl px-4 pb-8 text-xs text-[#a59fb0]">Stock imagery is sample content until replaced with Pinhole&apos;s own photos.</p>
+        <p className="mx-auto w-full max-w-7xl px-4 pb-8 text-xs text-muted-foreground">Stock imagery is sample content until replaced with Pinhole&apos;s own photos.</p>
       ) : null}
     </footer>
   )

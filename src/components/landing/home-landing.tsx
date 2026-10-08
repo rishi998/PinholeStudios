@@ -77,11 +77,11 @@ export function HomeLanding() {
   return (
     <>
       {skipped ? null : (
-        <div className="fixed inset-0 z-[80] grid place-items-center bg-[#07060a] text-primary">
+        <div className="fixed inset-0 z-[80] grid place-items-center bg-background text-primary">
           <div className="grid justify-items-center gap-4">
             <ApertureMark className="size-24" />
             <p className="font-mono text-sm tracking-[0.18em]">{progress}</p>
-            <button type="button" className="text-xs text-[#d3cddb] underline" onClick={() => { sessionStorage.setItem("pinhole-booted", "1"); window.dispatchEvent(new Event("pinhole-boot")); }}>
+            <button type="button" className="text-xs text-muted-foreground underline" onClick={() => { sessionStorage.setItem("pinhole-booted", "1"); window.dispatchEvent(new Event("pinhole-boot")); }}>
               Skip
             </button>
           </div>
@@ -89,7 +89,7 @@ export function HomeLanding() {
       )}
 
       <section ref={hero} className="relative min-h-[100svh] overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,rgba(255,107,53,0.28),transparent_42%),linear-gradient(180deg,rgba(7,6,10,0.2),#07060a)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,oklch(0.72_0.16_55/0.28),transparent_46%)]" />
         <div className="pointer-events-none absolute top-8 right-0 hidden h-[70%] w-[46%] lg:block">
           <ApertureHero />
         </div>
@@ -99,9 +99,9 @@ export function HomeLanding() {
             <h1 className="mt-4 font-display text-[clamp(3rem,9vw,8.5rem)] leading-[0.92] font-extrabold tracking-[-0.04em] text-balance">
               Seven spaces.
               <br />
-              One <em className="font-serif text-[#ff6b35] italic">frame</em> at a time.
+              One <em className="font-serif text-[var(--ember)] italic">frame</em> at a time.
             </h1>
-            <p className="mt-5 max-w-[60ch] text-[18px] leading-[1.65] text-[#d3cddb]">
+            <p className="mt-5 max-w-[60ch] text-[18px] leading-[1.65] text-muted-foreground">
               Film, pre-wedding, podcast and brand shoots, with sets, lights and crew ready at Farm 57, Kapashera.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -113,29 +113,29 @@ export function HomeLanding() {
               </Button>
               <WhatsAppLink placement="home-hero" size="lg" />
             </div>
-            <p className="mt-4 flex flex-wrap items-center gap-2 text-sm text-[#d3cddb]">
+            <p className="mt-4 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
               7 studios · AC · Parking · Crew on call
               <SampleBadge />
             </p>
           </div>
           <div className="flex gap-4 lg:absolute lg:right-8 lg:bottom-24">
-            <Link ref={cardA} href="/studios" className="grid h-[170px] w-[280px] max-w-[46vw] -rotate-2 content-between rounded-3xl border border-white/15 bg-white/10 p-4 backdrop-blur-md lg:-rotate-6">
+            <Link ref={cardA} href="/studios" className="grid h-[170px] w-[280px] max-w-[46vw] -rotate-2 content-between rounded-3xl border border-border bg-card/80 p-4 backdrop-blur-md lg:-rotate-6">
               <span className="font-mono text-xs tracking-[0.18em] text-primary">07 STUDIOS</span>
               <span className="font-display text-2xl">Explore spaces</span>
             </Link>
-            <Link ref={cardB} href="/availability" className="grid h-[170px] w-[280px] max-w-[46vw] rotate-2 content-between rounded-3xl border border-white/15 bg-[#15121a]/80 p-4 lg:rotate-3">
+            <Link ref={cardB} href="/availability" className="grid h-[170px] w-[280px] max-w-[46vw] rotate-2 content-between rounded-3xl border border-border bg-card/90 p-4 lg:rotate-3">
               <span className="font-mono text-xs tracking-[0.18em] text-primary">NEXT FREE DATE</span>
-              <span className="text-sm text-[#d3cddb]">Open the calendar and send a request. Confirmation stays on WhatsApp.</span>
+              <span className="text-sm text-muted-foreground">Open the calendar and send a request. Confirmation stays on WhatsApp.</span>
             </Link>
           </div>
-          <p className="font-mono text-xs tracking-[0.18em] text-[#a59fb0] uppercase">Scroll to continue</p>
+          <p className="font-mono text-xs tracking-[0.18em] text-muted-foreground uppercase">Scroll to continue</p>
         </div>
       </section>
 
       <section className="overflow-hidden py-10">
         <div className="flex w-max gap-8 motion-safe:animate-[marquee_36s_linear_infinite]">
           {[...useCases, "Pre-wedding", ...useCases].map((item, index) => (
-            <span key={`${item}-${index}`} className="font-display text-5xl font-extrabold tracking-tight text-transparent [-webkit-text-stroke:1.5px_#ffb020] md:text-7xl">
+            <span key={`${item}-${index}`} className="font-display text-5xl font-extrabold tracking-tight text-transparent [-webkit-text-stroke:1.5px_oklch(0.72_0.16_75)] md:text-7xl">
               {item}
             </span>
           ))}
@@ -178,7 +178,7 @@ export function HomeLanding() {
               </div>
             </div>
           ) : (
-            <button type="button" className="mt-4 grid h-64 w-full place-items-center rounded-3xl border border-white/10 bg-[#15121a]" onClick={() => setShow3d(true)}>
+            <button type="button" className="mt-4 grid h-64 w-full place-items-center rounded-3xl border border-border bg-card" onClick={() => setShow3d(true)}>
               Tap to explore
             </button>
           )}
@@ -194,12 +194,12 @@ export function HomeLanding() {
           [Car, "Parking", "On-site parking for cast, crew and vans."],
           [Users, "Crew on call", "Technicians and coordination through WhatsApp."],
         ].map(([Icon, title, text]) => (
-          <article key={String(title)} className="rounded-3xl border border-white/10 bg-[#15121a] p-5">
-            <span className="grid size-14 place-items-center rounded-2xl border border-white/10 text-primary shadow-[0_0_24px_-8px_#ffb020]">
+          <article key={String(title)} className="rounded-3xl border border-border bg-card p-5">
+            <span className="grid size-14 place-items-center rounded-2xl border border-border text-primary shadow-[0_0_24px_-8px_oklch(0.79_0.16_76)]">
               <Icon weight="duotone" size={28} />
             </span>
             <h3 className="mt-4 font-display text-2xl">{String(title)}</h3>
-            <p className="mt-2 text-[#d3cddb]">{String(text)}</p>
+            <p className="mt-2 text-muted-foreground">{String(text)}</p>
           </article>
         ))}
       </section>
@@ -211,9 +211,9 @@ export function HomeLanding() {
         </div>
       </section>
 
-      <section className="bg-[#f6f1e7] px-4 py-20 text-[#07060a]">
+      <section className="bg-[oklch(0.9_0.04_75)] px-4 py-20 text-[oklch(0.28_0.04_55)]">
         <div className="mx-auto grid w-full max-w-6xl gap-6">
-          <p className="font-mono text-xs tracking-[0.18em] text-[#e8890c] uppercase">Choose your space</p>
+          <p className="font-mono text-xs tracking-[0.18em] text-[oklch(0.55_0.14_65)] uppercase">Choose your space</p>
           <h2 className="font-display text-[clamp(2rem,5vw,4.25rem)] leading-[0.95] font-extrabold">Hourly, half day, <em className="font-serif italic">full day.</em></h2>
           <div className="grid gap-4 md:grid-cols-3">
             {[
@@ -237,20 +237,20 @@ export function HomeLanding() {
 
       <section className="mx-auto grid w-full max-w-6xl gap-6 px-4 py-16">
         <TrustBand />
-        <p className="text-sm text-[#d3cddb]">{testimonials.length} sample stories. Names stay “Sample client” until the studio supplies real quotes.</p>
+        <p className="text-sm text-muted-foreground">{testimonials.length} sample stories. Names stay “Sample client” until the studio supplies real quotes.</p>
       </section>
 
       <section className="relative overflow-hidden px-4 py-20">
         <div className="relative mx-auto grid w-full max-w-6xl gap-8 lg:grid-cols-2">
           <div>
             <h2 className="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.92] font-extrabold">
-              You&apos;ve seen the frame. <em className="font-serif text-[#ff6b35] italic">Let&apos;s shoot.</em>
+              You&apos;ve seen the frame. <em className="font-serif text-[var(--ember)] italic">Let&apos;s shoot.</em>
             </h2>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button nativeButton={false} size="lg" render={<Link href="/plan-my-shoot" />}>Plan my shoot</Button>
               <WhatsAppLink placement="home-close" size="lg" />
             </div>
-            <p className="mt-4 text-sm text-[#a59fb0]">{siteConfig.address.line}</p>
+            <p className="mt-4 text-sm text-muted-foreground">{siteConfig.address.line}</p>
           </div>
           <ContactForm />
         </div>

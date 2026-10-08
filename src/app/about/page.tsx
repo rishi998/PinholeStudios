@@ -24,7 +24,7 @@ export default function AboutPage() {
         </div>
         <ul className="grid gap-2 sm:grid-cols-2">
           {studios.map((studio) => (
-            <li key={studio.slug} className="rounded-2xl border border-border bg-[linear-gradient(160deg,#2a1c12,#141210)] px-4 py-3">
+            <li key={studio.slug} className="rounded-2xl border border-border bg-card px-4 py-3">
               {studio.name}
             </li>
           ))}

@@ -1,0 +1,124 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e5]:
+      - link "PINHOLE studio" [ref=f1e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f1e21]:
+          - generic [ref=f1e22]: PINHOLE
+          - generic [ref=f1e23]: studio
+      - navigation "Primary" [ref=f1e24]:
+        - link "Home" [ref=f1e25] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f1e26] [cursor=pointer]:
+          - /url: /about
+        - button "Studios" [ref=f1e28]
+        - button "Services" [ref=f1e30]
+        - link "Work" [ref=f1e31] [cursor=pointer]:
+          - /url: /work
+        - link "360° Recce" [ref=f1e32] [cursor=pointer]:
+          - /url: /recce
+      - generic [ref=f1e33]:
+        - generic [ref=f1e34]:
+          - button "Plan my shoot" [ref=f1e35] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=f1e36] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - 'button "Theme: dark. Switch to system" [ref=f1e37]'
+        - button "Account" [ref=f1e38]
+  - main [ref=f1e39]:
+    - generic [ref=f1e41]:
+      - heading "Contact" [level=1] [ref=f1e42]
+      - paragraph [ref=f1e43]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+    - generic [ref=f1e44]:
+      - generic [ref=f1e45]:
+        - generic [ref=f1e46]:
+          - generic [ref=f1e47]: Name
+          - textbox "Name" [ref=f1e49]
+        - generic [ref=f1e50]:
+          - generic [ref=f1e51]: Email
+          - textbox "Email" [ref=f1e53]
+        - generic [ref=f1e54]:
+          - generic [ref=f1e55]: Phone
+          - generic [ref=f1e57]:
+            - generic [ref=f1e58]: "+91"
+            - textbox "Phone" [ref=f1e59]
+        - generic [ref=f1e60]:
+          - generic [ref=f1e61]: Message
+          - textbox "Message" [ref=f1e63]
+        - button "Submit" [ref=f1e64]
+      - generic [ref=f1e65]:
+        - list [ref=f1e66]:
+          - listitem [ref=f1e67]:
+            - link "+91 85069 05757" [ref=f1e68] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=f1e69]:
+            - link "+91 99997 63457" [ref=f1e70] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=f1e71]:
+            - link "+91 98186 37485" [ref=f1e72] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=f1e73]:
+            - link "pinholestudioz@gmail.com" [ref=f1e74] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+        - link "Get directions" [ref=f1e75] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+        - iframe [ref=f1e76]:
+          - link "Open in Maps (opens in new tab)" [ref=f3e4] [cursor=pointer]:
+            - /url: about:invalid#zClosurez
+            - text: Open in Maps
+  - contentinfo [ref=f1e77]:
+    - generic [ref=f1e78]:
+      - generic [ref=f1e79]:
+        - paragraph [ref=f1e80]: PINHOLE
+        - paragraph [ref=f1e81]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=f1e82] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=f1e83]:
+        - paragraph [ref=f1e84]: Contact
+        - list [ref=f1e85]:
+          - listitem [ref=f1e86]:
+            - link "+91 85069 05757" [ref=f1e87] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=f1e88]:
+            - link "+91 99997 63457" [ref=f1e89] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=f1e90]:
+            - link "+91 98186 37485" [ref=f1e91] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=f1e92]:
+            - link "pinholestudioz@gmail.com" [ref=f1e93] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=f1e94]:
+        - paragraph [ref=f1e95]: Brand
+        - list [ref=f1e96]:
+          - listitem [ref=f1e97]:
+            - link "Pinhole Filmcity" [ref=f1e98] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=f1e99]:
+            - link "Pinhole Media" [ref=f1e100] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=f1e101]:
+            - link "Pinhole Studio" [ref=f1e102] [cursor=pointer]:
+              - /url: /
+    - generic [ref=f1e103]:
+      - list [ref=f1e104]:
+        - listitem [ref=f1e105]:
+          - link "Booking T&C" [ref=f1e106] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=f1e107]:
+          - link "Events T&C" [ref=f1e108] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=f1e109]:
+          - link "Shoot / Production P&P" [ref=f1e110] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=f1e111]:
+          - link "Event P&P" [ref=f1e112] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=f1e113] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=f1e114]: Stock imagery is sample content until replaced with Pinhole's own photos.
+  - button "Open studio assistant" [ref=f1e116]
+  - link "Chat on WhatsApp" [ref=f1e120] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"

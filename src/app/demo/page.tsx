@@ -26,11 +26,11 @@ function DemoView() {
           Back
         </Button>
       </div>
-      <p className="text-sm text-[#d3cddb]">Drag is limited in this preview. Pick a view below. Sun colour follows the lighting preset.</p>
+      <p className="text-sm text-muted-foreground">Drag is limited in this preview. Pick a view below. Sun colour follows the lighting preset.</p>
       <StudioScene studio={studio} hour={hour} className="h-[70svh]" />
       <div className="flex gap-2 overflow-x-auto" data-demo-presets>
         {Object.entries(cameraPresets).map(([id, preset]) => (
-          <button key={id} type="button" data-preset={id} className={`h-11 shrink-0 rounded-full px-4 text-sm ${studio === id ? "bg-primary text-primary-foreground" : "border border-white/15"}`} onClick={() => setStudio(id)}>
+          <button key={id} type="button" data-preset={id} className={`h-11 shrink-0 rounded-full px-4 text-sm ${studio === id ? "bg-primary text-primary-foreground" : "border border-border bg-card"}`} onClick={() => setStudio(id)}>
             {preset.label}
           </button>
         ))}
@@ -47,11 +47,11 @@ function DemoView() {
         </Button>
       </div>
       {panel ? (
-        <div className="max-w-md rounded-3xl border border-white/10 bg-[#15121a]/90 p-5 backdrop-blur-md" onKeyDown={(event) => { if (event.key === "Escape") setPanel(null); }}>
+        <div className="max-w-md rounded-3xl border border-border bg-card/90 p-5 backdrop-blur-md" onKeyDown={(event) => { if (event.key === "Escape") setPanel(null); }}>
           {panel === "customize" ? (
             <>
               <p className="font-medium">Lighting</p>
-              <p className="mt-2 text-sm text-[#d3cddb]">Midday is cooler. Golden hour pushes the sun toward ember. Ultra shadows stay off in this build because they are expensive for the GPU.</p>
+              <p className="mt-2 text-sm text-muted-foreground">Midday is cooler. Golden hour pushes the sun toward ember. Ultra shadows stay off in this build because they are expensive for the GPU.</p>
             </>
           ) : (
             <>

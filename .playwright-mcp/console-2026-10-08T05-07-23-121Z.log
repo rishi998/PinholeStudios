@@ -1,0 +1,141 @@
+[     377ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    2215ms] [LOG] [Fast Refresh] done in 1946ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    8398ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   10758ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   14023ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   14303ms] [LOG] [Fast Refresh] done in 825ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   15589ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16308ms] [LOG] [Fast Refresh] done in 1103ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   21068ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <InnerScrollHandlerNew focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+      <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+        <LoadingBoundary name="contact/" loading={null}>
+          <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <InnerLayoutRouter url="/contact" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                  <SegmentViewNode type="page" pagePath="contact/pa...">
+                    <SegmentTrieNode>
+                    <ContactPage>
+                      <section>
+                      <div className="mx-auto gr...">
+                        <ContactForm>
+                          <form className="grid gap-4" onFocus={function onFocus} onSubmit={function onSubmit}>
+                            ...
+                              <Input id="contact-name" name="name" autoComplete="name" required={true} ...>
+                                <Input type={undefined} data-slot="input" className="h-12 w-ful..." id="contact-name" ...>
+                                  <FieldControl ref={null} type={undefined} data-slot="input" className="h-12 w-ful..." ...>
+                                    <input
+                                      id="contact-name"
+                                      disabled={false}
+                                      name="name"
+                                      ref={function}
+                                      aria-labelledby={undefined}
+                                      autoFocus={false}
+                                      defaultValue={undefined}
+                                      onChange={function}
+                                      onFocus={function}
+                                      onBlur={function}
+                                      onKeyDown={function}
+                                      type={undefined}
+                                      data-slot="input"
+                                      autoComplete="name"
+                                      required={true}
+                                      aria-describedby={undefined}
+                                      className="h-12 w-full min-w-0 rounded-xl border border-input bg-muted/50 px-3 p..."
+-                                     style={{caret-color:"transparent"}}
+                                    >
+                            ...
+                              <Input id="contact-email" name="email" type="email" autoComplete="email" inputMode="email" ...>
+                                <Input type="email" data-slot="input" className="h-12 w-ful..." id="contact-email" ...>
+                                  <FieldControl ref={null} type="email" data-slot="input" className="h-12 w-ful..." ...>
+                                    <input
+                                      id="contact-email"
+                                      disabled={false}
+                                      name="email"
+                                      ref={function}
+                                      aria-labelledby={undefined}
+                                      autoFocus={false}
+                                      defaultValue={undefined}
+                                      onChange={function}
+                                      onFocus={function}
+                                      onBlur={function}
+                                      onKeyDown={function}
+                                      type="email"
+                                      data-slot="input"
+                                      autoComplete="email"
+                                      inputMode="email"
+                                      required={true}
+                                      className="h-12 w-full min-w-0 rounded-xl border border-input bg-muted/50 px-3 p..."
+-                                     style={{caret-color:"transparent"}}
+                                    >
+                            ...
+                              <Input id="contact-phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" ...>
+                                <Input type="tel" data-slot="input" className="h-12 w-ful..." id="contact-phone" ...>
+                                  <FieldControl ref={null} type="tel" data-slot="input" className="h-12 w-ful..." ...>
+                                    <input
+                                      id="contact-phone"
+                                      disabled={false}
+                                      name="phone"
+                                      ref={function}
+                                      aria-labelledby={undefined}
+                                      autoFocus={false}
+                                      defaultValue={undefined}
+                                      onChange={function}
+                                      onFocus={function}
+                                      onBlur={function}
+                                      onKeyDown={function}
+                                      type="tel"
+                                      data-slot="input"
+                                      autoComplete="tel"
+                                      inputMode="tel"
+                                      required={true}
+                                      className="h-12 w-full min-w-0 rounded-xl border border-input bg-muted/50 px-3 p..."
+-                                     style={{caret-color:"transparent"}}
+                                    >
+                            <Field label="Message" htmlFor="contact-me...">
+                              <div className="grid gap-1.5">
+                                <label>
+                                <div data-describedby={undefined}>
+                                  <Textarea id="contact-me..." name="message" required={true} maxLength={1000}>
+                                    <textarea
+                                      data-slot="textarea"
+                                      className="flex field-sizing-content min-h-28 w-full rounded-xl border border-in..."
+                                      id="contact-message"
+                                      name="message"
+                                      required={true}
+                                      maxLength={1000}
+-                                     style={{caret-color:"transparent"}}
+                                    >
+                            <input
+                              name="company"
+                              tabIndex={-1}
+                              autoComplete="off"
+                              className="hidden"
+                              aria-hidden="true"
+-                             style={{caret-color:"transparent"}}
+                            >
+                            ...
+                        ...
+                  ...
+                ...
+      ...
+ @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[   23428ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   23949ms] [LOG] [Fast Refresh] done in 799ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   46919ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   47948ms] [LOG] [Fast Refresh] done in 1140ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[  147315ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[  148019ms] [LOG] [Fast Refresh] done in 808ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776

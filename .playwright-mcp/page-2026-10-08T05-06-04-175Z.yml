@@ -1,0 +1,327 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "PINHOLE studio" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e21]:
+          - generic [ref=e22]: PINHOLE
+          - generic [ref=e23]: studio
+      - navigation "Primary" [ref=e24]:
+        - link "Home" [ref=e25] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e26] [cursor=pointer]:
+          - /url: /about
+        - button "Studios" [ref=e28]
+        - button "Services" [ref=e30]
+        - link "Work" [ref=e31] [cursor=pointer]:
+          - /url: /work
+        - link "360° Recce" [ref=e32] [cursor=pointer]:
+          - /url: /recce
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - button "Plan my shoot" [ref=e35] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=e36] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - 'button "Theme: dark. Switch to system" [ref=e37]'
+        - button "Account" [ref=e38]
+  - main [ref=e39]:
+    - generic [ref=e41]:
+      - paragraph [ref=e54]: "0"
+      - button "Skip" [ref=e55]
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - paragraph [ref=e59]: Delhi's production-ready studio floors
+        - heading [level=1] [ref=e60]:
+          - text: Seven spaces.One
+          - emphasis [ref=e61]: frame
+          - text: at a time.
+        - paragraph [ref=e62]: Film, pre-wedding, podcast and brand shoots, with sets, lights and crew ready at Farm 57, Kapashera.
+        - generic [ref=e63]:
+          - button "Plan my shoot" [ref=e64] [cursor=pointer]
+          - button "Watch showreel" [ref=e65] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=e66] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - paragraph [ref=e67]:
+          - text: 7 studios · AC · Parking · Crew on call
+          - generic [ref=e68]: Sample
+      - generic [ref=e69]:
+        - link "07 STUDIOS Explore spaces" [ref=e70] [cursor=pointer]:
+          - /url: /studios
+          - generic [ref=e71]: 07 STUDIOS
+          - generic [ref=e72]: Explore spaces
+        - link "NEXT FREE DATE Open the calendar and send a request. Confirmation stays on WhatsApp." [ref=e73] [cursor=pointer]:
+          - /url: /availability
+          - generic [ref=e74]: NEXT FREE DATE
+          - generic [ref=e75]: Open the calendar and send a request. Confirmation stays on WhatsApp.
+      - paragraph [ref=e76]: Scroll to continue
+    - generic [ref=e78]:
+      - generic [ref=e79]: Ad films
+      - generic [ref=e80]: Documentaries
+      - generic [ref=e81]: Short films
+      - generic [ref=e82]: News shows
+      - generic [ref=e83]: Training videos
+      - generic [ref=e84]: Product shoots
+      - generic [ref=e85]: Songs
+      - generic [ref=e86]: Interviews
+      - generic [ref=e87]: Cultural shoots
+      - generic [ref=e88]: TVC/DVC
+      - generic [ref=e89]: OTT production
+      - generic [ref=e90]: Music videos
+      - generic [ref=e91]: Corporate production
+      - generic [ref=e92]: Podcasts
+      - generic [ref=e93]: Influencer content
+      - generic [ref=e94]: YouTube
+      - generic [ref=e95]: Reels
+      - generic [ref=e96]: Events
+      - generic [ref=e97]: Workshops
+      - generic [ref=e98]: Seminars
+      - generic [ref=e99]: Brand campaigns
+      - generic [ref=e100]: Pre-wedding
+      - generic [ref=e101]: Ad films
+      - generic [ref=e102]: Documentaries
+      - generic [ref=e103]: Short films
+      - generic [ref=e104]: News shows
+      - generic [ref=e105]: Training videos
+      - generic [ref=e106]: Product shoots
+      - generic [ref=e107]: Songs
+      - generic [ref=e108]: Interviews
+      - generic [ref=e109]: Cultural shoots
+      - generic [ref=e110]: TVC/DVC
+      - generic [ref=e111]: OTT production
+      - generic [ref=e112]: Music videos
+      - generic [ref=e113]: Corporate production
+      - generic [ref=e114]: Podcasts
+      - generic [ref=e115]: Influencer content
+      - generic [ref=e116]: YouTube
+      - generic [ref=e117]: Reels
+      - generic [ref=e118]: Events
+      - generic [ref=e119]: Workshops
+      - generic [ref=e120]: Seminars
+      - generic [ref=e121]: Brand campaigns
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - paragraph [ref=e124]: 01 — 07
+        - heading [level=2] [ref=e125]:
+          - text: The floors,
+          - emphasis [ref=e126]: named.
+        - paragraph [ref=e127]: Each space is a different kind of set. Open one, or preview it in 3D.
+      - list [ref=e128]:
+        - listitem [ref=e129]:
+          - paragraph [ref=e130]: 01 / 07
+          - heading "Empty Studio Space" [level=3] [ref=e131]
+          - generic [ref=e132]:
+            - button "Explore studio" [ref=e133] [cursor=pointer]
+            - button "360° recce" [ref=e134] [cursor=pointer]
+            - button "Preview in 3D" [ref=e135] [cursor=pointer]
+        - listitem [ref=e136]:
+          - paragraph [ref=e137]: 02 / 07
+          - heading "Green Screen Studio" [level=3] [ref=e138]
+          - generic [ref=e139]:
+            - button "Explore studio" [ref=e140] [cursor=pointer]
+            - button "360° recce" [ref=e141] [cursor=pointer]
+            - button "Preview in 3D" [ref=e142] [cursor=pointer]
+        - listitem [ref=e143]:
+          - paragraph [ref=e144]: 03 / 07
+          - heading "The House Setup" [level=3] [ref=e145]
+          - generic [ref=e146]:
+            - button "Explore studio" [ref=e147] [cursor=pointer]
+            - button "360° recce" [ref=e148] [cursor=pointer]
+            - button "Preview in 3D" [ref=e149] [cursor=pointer]
+        - listitem [ref=e150]:
+          - paragraph [ref=e151]: 04 / 07
+          - heading "White Cyclorama Setup" [level=3] [ref=e152]
+          - generic [ref=e153]:
+            - button "Explore studio" [ref=e154] [cursor=pointer]
+            - button "360° recce" [ref=e155] [cursor=pointer]
+            - button "Preview in 3D" [ref=e156] [cursor=pointer]
+        - listitem [ref=e157]:
+          - paragraph [ref=e158]: 05 / 07
+          - heading "Podcast Setup" [level=3] [ref=e159]
+          - generic [ref=e160]:
+            - button "Explore studio" [ref=e161] [cursor=pointer]
+            - button "360° recce" [ref=e162] [cursor=pointer]
+            - button "Preview in 3D" [ref=e163] [cursor=pointer]
+        - listitem [ref=e164]:
+          - paragraph [ref=e165]: 06 / 07
+          - heading "Garden Area" [level=3] [ref=e166]
+          - generic [ref=e167]:
+            - button "Explore studio" [ref=e168] [cursor=pointer]
+            - button "360° recce" [ref=e169] [cursor=pointer]
+            - button "Preview in 3D" [ref=e170] [cursor=pointer]
+        - listitem [ref=e171]:
+          - paragraph [ref=e172]: 07 / 07
+          - heading "Lawn Area" [level=3] [ref=e173]
+          - generic [ref=e174]:
+            - button "Explore studio" [ref=e175] [cursor=pointer]
+            - button "360° recce" [ref=e176] [cursor=pointer]
+            - button "Preview in 3D" [ref=e177] [cursor=pointer]
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - paragraph [ref=e180]: Demo
+        - heading [level=2] [ref=e181]:
+          - text: Walk the floor
+          - emphasis [ref=e182]: before
+        - paragraph [ref=e183]: A designed preview of the lot. The full scene, lighting presets and camera chips live on the demo page.
+      - generic [ref=e184]:
+        - button "Open full 3D demo" [ref=e185] [cursor=pointer]
+        - button "Tap to explore" [ref=e186]
+    - generic [ref=e187]:
+      - article [ref=e188]:
+        - heading "Large floors" [level=3] [ref=e193]
+        - paragraph [ref=e194]: Open indoor space for builds and commercials.
+      - article [ref=e195]:
+        - heading "Indoor and outdoor" [level=3] [ref=e200]
+        - paragraph [ref=e201]: House sets, garden and lawn on one lot.
+      - article [ref=e202]:
+        - heading "Podcast ready" [level=3] [ref=e207]
+        - paragraph [ref=e208]: A treated room for conversations and reels.
+      - article [ref=e209]:
+        - heading "Lights and sound" [level=3] [ref=e214]
+        - paragraph [ref=e215]: Grip, lighting and sound support on request.
+      - article [ref=e216]:
+        - heading "Parking" [level=3] [ref=e221]
+        - paragraph [ref=e222]: On-site parking for cast, crew and vans.
+      - article [ref=e223]:
+        - heading "Crew on call" [level=3] [ref=e228]
+        - paragraph [ref=e229]: Technicians and coordination through WhatsApp.
+    - generic [ref=e232]:
+      - paragraph [ref=e233]: Stories
+      - heading [level=2] [ref=e234]:
+        - text: Trusted by creators
+        - emphasis [ref=e235]: and brands.
+      - paragraph [ref=e236]: Sample stories until real clients and links are supplied.
+    - generic [ref=e238]:
+      - paragraph [ref=e239]: Choose your space
+      - heading [level=2] [ref=e240]:
+        - text: Hourly, half day,
+        - emphasis [ref=e241]: full day.
+      - generic [ref=e242]:
+        - article [ref=e243]:
+          - paragraph [ref=e244]: Hourly
+          - paragraph [ref=e245]:
+            - text: ₹4,500
+            - generic [ref=e246]: Sample
+          - paragraph [ref=e247]: AC, power, parking and Wi-Fi on the indoor floors.
+          - button "Get my quote" [ref=e248] [cursor=pointer]
+        - article [ref=e249]:
+          - paragraph [ref=e250]: Half day · Popular
+          - paragraph [ref=e251]:
+            - text: ₹18,000
+            - generic [ref=e252]: Sample
+          - paragraph [ref=e253]: AC, power, parking and Wi-Fi on the indoor floors.
+          - button "Get my quote" [ref=e254] [cursor=pointer]
+        - article [ref=e255]:
+          - paragraph [ref=e256]: Full day
+          - paragraph [ref=e257]:
+            - text: ₹32,000
+            - generic [ref=e258]: Sample
+          - paragraph [ref=e259]: AC, power, parking and Wi-Fi on the indoor floors.
+          - button "Get my quote" [ref=e260] [cursor=pointer]
+    - generic [ref=e261]:
+      - list [ref=e262]:
+        - listitem [ref=e263]:
+          - paragraph [ref=e264]: 12,400
+          - paragraph [ref=e265]:
+            - text: Hours booked
+            - generic [ref=e266]: Sample
+        - listitem [ref=e267]:
+          - paragraph [ref=e268]:
+            - generic [ref=e269]: 96%
+          - paragraph [ref=e270]:
+            - text: Customer satisfaction
+            - generic [ref=e271]: Sample
+        - listitem [ref=e272]:
+          - paragraph [ref=e273]: "12"
+          - paragraph [ref=e274]:
+            - text: Awards & recognition
+            - generic [ref=e275]: Sample
+        - listitem [ref=e276]:
+          - paragraph [ref=e277]: "340"
+          - paragraph [ref=e278]:
+            - text: Clients served
+            - generic [ref=e279]: Sample
+      - paragraph [ref=e280]: 12 sample stories. Names stay “Sample client” until the studio supplies real quotes.
+    - generic [ref=e282]:
+      - generic [ref=e283]:
+        - heading [level=2] [ref=e284]:
+          - text: You've seen the frame.
+          - emphasis [ref=e285]: Let's shoot.
+        - generic [ref=e286]:
+          - button "Plan my shoot" [ref=e287] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=e288] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - paragraph [ref=e289]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+      - generic [ref=e290]:
+        - generic [ref=e291]:
+          - generic [ref=e292]: Name
+          - textbox "Name" [ref=e294]
+        - generic [ref=e295]:
+          - generic [ref=e296]: Email
+          - textbox "Email" [ref=e298]
+        - generic [ref=e299]:
+          - generic [ref=e300]: Phone
+          - generic [ref=e302]:
+            - generic [ref=e303]: "+91"
+            - textbox "Phone" [ref=e304]
+        - generic [ref=e305]:
+          - generic [ref=e306]: Message
+          - textbox "Message" [ref=e308]
+        - button "Submit" [ref=e309]
+  - contentinfo [ref=e310]:
+    - generic [ref=e311]:
+      - generic [ref=e312]:
+        - paragraph [ref=e313]: PINHOLE
+        - paragraph [ref=e314]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=e315] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=e316]:
+        - paragraph [ref=e317]: Contact
+        - list [ref=e318]:
+          - listitem [ref=e319]:
+            - link "+91 85069 05757" [ref=e320] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=e321]:
+            - link "+91 99997 63457" [ref=e322] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=e323]:
+            - link "+91 98186 37485" [ref=e324] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=e325]:
+            - link "pinholestudioz@gmail.com" [ref=e326] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=e327]:
+        - paragraph [ref=e328]: Brand
+        - list [ref=e329]:
+          - listitem [ref=e330]:
+            - link "Pinhole Filmcity" [ref=e331] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e332]:
+            - link "Pinhole Media" [ref=e333] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e334]:
+            - link "Pinhole Studio" [ref=e335] [cursor=pointer]:
+              - /url: /
+    - generic [ref=e336]:
+      - list [ref=e337]:
+        - listitem [ref=e338]:
+          - link "Booking T&C" [ref=e339] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=e340]:
+          - link "Events T&C" [ref=e341] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=e342]:
+          - link "Shoot / Production P&P" [ref=e343] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=e344]:
+          - link "Event P&P" [ref=e345] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=e346] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=e347]: Stock imagery is sample content until replaced with Pinhole's own photos.
+  - button "Open studio assistant" [ref=e349]
+  - link "Chat on WhatsApp" [ref=e353] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e359] [cursor=pointer]

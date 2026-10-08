@@ -89,7 +89,7 @@ export function StudioScene({
   if (!view) return null;
 
   return (
-    <div className={`overflow-hidden rounded-3xl border border-white/10 bg-[#07060a] ${className}`} data-demo-preset={studio}>
+    <div className={`overflow-hidden rounded-3xl border border-border bg-card ${className}`} data-demo-preset={studio}>
       <Canvas shadows dpr={[1, 1.5]} camera={{ position: view.position, fov: 42 }} gl={{ antialias: true }}>
         <color attach="background" args={["#07060a"]} />
         <Rig position={view.position} target={view.target} />

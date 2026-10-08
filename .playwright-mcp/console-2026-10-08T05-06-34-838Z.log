@@ -1,0 +1,28 @@
+[     350ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    2623ms] [LOG] [Fast Refresh] done in 2375ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    4200ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    4302ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    4757ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    5637ms] [WARNING] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead. @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    6005ms] [LOG] [Fast Refresh] done in 1356ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   11970ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   13051ms] [LOG] [Fast Refresh] done in 1185ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   15918ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16006ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16780ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16843ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   17687ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   17744ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   18306ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   18343ms] [LOG] [Fast Refresh] done in 140ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   18963ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19123ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19599ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19667ms] [LOG] [Fast Refresh] done in 183ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19999ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   20125ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   20517ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   21002ms] [LOG] [Fast Refresh] done in 631ms @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   21226ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   21334ms] [LOG] [HMR] connected @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   21701ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3010/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
