@@ -2,6 +2,7 @@ import { AvailabilityCalendar } from "@/components/features/availability-calenda
 import { PageIntro } from "@/components/layout/page-intro";
 import { studios } from "@/data/studios";
 import { availabilityFor } from "@/lib/queries";
+import { cn } from "cn";
 
 export const dynamic = "force-dynamic";
 
@@ -15,16 +16,29 @@ export default async function AvailabilityPage({ searchParams }: { searchParams:
 
   return (
     <>
-      <PageIntro title="Availability" lede="Pick a studio, then a free date. Booking requests stay pending until the studio confirms them on WhatsApp." />
-      <div className="mx-auto grid w-full max-w-4xl gap-4 px-4 pb-16">
-        <div className="flex gap-2 overflow-x-auto">
+      <PageIntro
+        eyebrow="A request, not a hold"
+        title="Availability"
+        lede="Pick a studio and a preferred date. This calendar is the studio's own list, not a live diary. An unmarked day is not a guaranteed opening, and the studio confirms the request on WhatsApp."
+      />
+      <div className="mx-auto w-full max-w-[var(--page-width)] px-5 pt-8 pb-[var(--space-section)] md:px-8">
+        <div className="flex gap-2 overflow-x-auto pb-2">
           {studios.map((item) => (
-            <a key={item.slug} href={`/availability?studio=${item.slug}`} className={`shrink-0 rounded-full px-4 py-2 text-sm ${item.slug === studio.slug ? "bg-primary text-primary-foreground" : "border border-border"}`}>
+            <a
+              key={item.slug}
+              href={`/availability?studio=${item.slug}`}
+              className={cn(
+                "h-11 shrink-0 rounded-full border px-4 py-2 text-sm",
+                item.slug === studio.slug ? "border-transparent bg-[var(--ember)] text-[oklch(0.2_0.03_50)]" : "border-border"
+              )}
+            >
               {item.name}
             </a>
           ))}
         </div>
-        <AvailabilityCalendar studioSlug={studio.slug} rows={rows.map((row) => ({ date: row.date, slot: row.slot, state: row.state }))} />
+        <div className="mt-8 max-w-3xl">
+          <AvailabilityCalendar studioSlug={studio.slug} rows={rows.map((row) => ({ date: row.date, slot: row.slot, state: row.state }))} />
+        </div>
       </div>
     </>
   );

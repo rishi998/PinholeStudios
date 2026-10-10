@@ -61,7 +61,7 @@ export function ChatWidget() {
   }
 
   return (
-    <div className="fixed right-3 bottom-[calc(9.5rem+env(safe-area-inset-bottom))] z-30 md:right-6 md:bottom-24">
+    <div className="fixed right-6 bottom-24 z-30 hidden md:block">
       {open ? (
         <div className="mb-3 flex h-[min(560px,70dvh)] w-[min(380px,calc(100vw-1.5rem))] flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-2xl">
           <div className="flex items-center justify-between border-b border-border px-4 py-3">

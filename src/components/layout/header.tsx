@@ -10,7 +10,6 @@ import { createPortal } from "react-dom"
 import { Logo } from "@/components/layout/logo"
 import { authClient } from "@/lib/auth-client"
 import { useShell } from "@/components/layout/shell-context"
-import { ThemeToggle } from "@/components/layout/theme-toggle"
 import { WhatsAppLink } from "@/components/layout/whatsapp-link"
 import {
   Accordion,
@@ -44,7 +43,6 @@ function isCurrent(pathname: string, href: string) {
 export function Header() {
   const pathname = usePathname()
   const { menuOpen, setMenuOpen } = useShell()
-  const [hidden, setHidden] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [openMenu, setOpenMenu] = useState<"studios" | "services" | null>(null)
   const [seenPath, setSeenPath] = useState(pathname)
@@ -69,13 +67,8 @@ export function Header() {
   }, [menuOpen])
 
   useEffect(() => {
-    let last = window.scrollY
-    const onScroll = () => {
-      const y = window.scrollY
-      setScrolled(y > 24)
-      setHidden(y > last && y > 80)
-      last = y
-    }
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
@@ -102,27 +95,18 @@ export function Header() {
   }
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-40 border-b transition-[transform] duration-300",
-        scrolled ? "border-border" : "border-transparent",
-        hidden && !menuOpen ? "-translate-y-full" : "translate-y-0"
-      )}
-    >
-      <div
-        className={cn(
-          "bg-[var(--glass-bg)] backdrop-blur-xl",
-          scrolled ? "shadow-[0_1px_0_var(--glass-border)]" : ""
-        )}
-      >
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-[#14110E] text-[var(--cream)]">
+      <div>
         <div
           className={cn(
-            "mx-auto flex w-full max-w-7xl items-center gap-3 px-4 transition-[height] duration-300",
-            scrolled ? "h-16" : "h-20"
+            "flex w-full items-center gap-4 px-4 transition-[height] duration-300 md:px-8",
+            scrolled ? "h-20" : "h-24"
           )}
         >
-          <Logo />
-          <nav className="ml-6 hidden items-center gap-1 lg:flex" aria-label="Primary">
+          <div className="shrink-0">
+            <Logo />
+          </div>
+          <nav className="hidden min-w-0 flex-1 items-center justify-evenly lg:flex" aria-label="Primary">
             <NavLink href="/" current={isCurrent(pathname, "/")}>
               Home
             </NavLink>
@@ -183,20 +167,19 @@ export function Header() {
               </NavLink>
             ))}
           </nav>
-          <div className="ml-auto flex items-center gap-2">
-            <div className="hidden items-center gap-2 lg:flex">
-              <Button nativeButton={false} render={<Link href="/plan-my-shoot" />}>
+          <div className="ml-auto flex shrink-0 items-center gap-3">
+            <div className="hidden items-center gap-3 lg:flex">
+              <Button nativeButton={false} render={<Link href="/plan-my-shoot" />} size="lg" className="font-bold">
                 Plan my shoot
               </Button>
               <WhatsAppLink placement="header" iconOnly />
             </div>
-            <ThemeToggle />
             <AccountMenu />
             <Button
               type="button"
               variant="ghost"
               size="icon"
-              className="lg:hidden"
+              className="text-[var(--cream)] hover:bg-white/10 hover:text-[var(--cream)] lg:hidden"
               aria-expanded={menuOpen}
               aria-controls="mobile-navigation"
               aria-hidden={menuOpen || undefined}
@@ -228,7 +211,7 @@ export function Header() {
         {menuOpen ? (
           <motion.div
             id="mobile-navigation"
-            className="fixed inset-0 z-50 flex flex-col bg-[var(--glass-bg)] backdrop-blur-xl lg:hidden"
+            className="fixed inset-0 z-50 flex flex-col bg-[#14110E] text-[var(--cream)] lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -259,7 +242,7 @@ export function Header() {
                   <Link
                     href={link.href}
                     aria-current={isCurrent(pathname, link.href) ? "page" : undefined}
-                    className="flex h-14 items-center font-display text-2xl"
+                    className="flex h-14 items-center font-display text-2xl font-bold"
                   >
                     {link.label}
                   </Link>
@@ -267,7 +250,7 @@ export function Header() {
               ))}
               <Accordion>
                 <AccordionItem value="studios">
-                  <AccordionTrigger className="h-14 text-2xl font-display no-underline hover:no-underline">
+                  <AccordionTrigger className="h-14 text-2xl font-bold font-display no-underline hover:no-underline">
                     Studios
                   </AccordionTrigger>
                   <AccordionContent>
@@ -283,7 +266,7 @@ export function Header() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="services">
-                  <AccordionTrigger className="h-14 text-2xl font-display no-underline hover:no-underline">
+                  <AccordionTrigger className="h-14 text-2xl font-bold font-display no-underline hover:no-underline">
                     Services
                   </AccordionTrigger>
                   <AccordionContent>
@@ -304,7 +287,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   aria-current={isCurrent(pathname, link.href) ? "page" : undefined}
-                  className="flex h-14 items-center font-display text-2xl"
+                  className="flex h-14 items-center font-display text-2xl font-bold"
                 >
                   {link.label}
                 </Link>
@@ -340,8 +323,8 @@ function NavLink({
       href={href}
       aria-current={current ? "page" : undefined}
       className={cn(
-        "rounded-full px-3 py-2 text-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
-        current ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+        "rounded-full px-4 py-3 text-base font-bold focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+        current ? "text-[var(--cream)]" : "text-[var(--cream)]/75 hover:text-[var(--cream)]"
       )}
     >
       {children}
@@ -373,8 +356,8 @@ function MegaMenu({
       <button
         type="button"
         className={cn(
-          "rounded-full px-3 py-2 text-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
-          current || open ? "text-foreground" : "text-muted-foreground"
+          "rounded-full px-4 py-3 text-base font-bold focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+          current || open ? "text-[var(--cream)]" : "text-[var(--cream)]/75 hover:text-[var(--cream)]"
         )}
         aria-expanded={open}
         aria-controls={menuId}
@@ -401,7 +384,9 @@ function AccountMenu() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger render={<Button variant="ghost" size="icon" aria-label="Account" />}>
+      <DropdownMenuTrigger
+        render={<Button variant="ghost" size="icon" aria-label="Account" className="text-[var(--cream)] hover:bg-white/10 hover:text-[var(--cream)]" />}
+      >
         <UserRound />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-44 rounded-2xl">

@@ -133,53 +133,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  --background: oklch(0.24 0.045 85);
-  --foreground: oklch(0.96 0.015 85);
-  --card: oklch(0.3 0.04 85);
-  --card-foreground: oklch(0.96 0.015 85);
-  --popover: oklch(0.32 0.04 85);
-  --popover-foreground: oklch(0.96 0.015 85);
-  --primary: oklch(0.79 0.165 76);
-  --primary-foreground: oklch(0.22 0.04 70);
-  --secondary: oklch(0.33 0.035 85);
-  --secondary-foreground: oklch(0.96 0.015 85);
-  --muted: oklch(0.33 0.035 85);
-  --muted-foreground: oklch(0.82 0.02 85);
-  --accent: oklch(0.36 0.04 85);
-  --accent-foreground: oklch(0.96 0.015 85);
-  --ember: oklch(0.68 0.19 40);
-  --teal: oklch(0.75 0.12 180);
-  --cream: oklch(0.96 0.02 85);
-  --text-soft: oklch(0.86 0.02 85);
-  --text-muted: oklch(0.76 0.02 85);
-  --bg-0: oklch(0.24 0.045 85);
-  --bg-1: oklch(0.28 0.04 85);
-  --destructive: oklch(0.65 0.22 25);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.79 0.165 76);
-  --success: oklch(0.72 0.17 150);
-  --danger: oklch(0.65 0.22 25);
-  --whatsapp: oklch(0.76 0.19 145);
-  --glass-bg: oklch(0.16 0 0 / 78%);
-  --glass-border: oklch(1 0 0 / 12%);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.79 0.165 76);
-  --radius: 1rem;
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --space-section: clamp(4.5rem, 9vw, 8rem);
+  --page-width: 72rem;
+  --heading-hero: clamp(3.1rem, 6vw, 6.25rem);
 }
 
 @layer base {
@@ -188,6 +144,7 @@
   }
   html {
     @apply font-sans;
+    scroll-padding-top: 6.5rem;
   }
   body {
     @apply bg-background text-foreground;

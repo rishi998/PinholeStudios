@@ -1,0 +1,139 @@
+- generic [active] [ref=f55e1]:
+  - link "Skip to content" [ref=f55e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f55e3]:
+    - generic [ref=f55e5]:
+      - link [ref=f55e6] [cursor=pointer]:
+        - /url: /
+        - img "Pinhole Studio" [ref=f55e7]
+      - navigation "Primary" [ref=f55e8]:
+        - link "Home" [ref=f55e9] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f55e10] [cursor=pointer]:
+          - /url: /about
+        - button "Studios" [ref=f55e12]
+        - button "Services" [ref=f55e14]
+        - link "Work" [ref=f55e15] [cursor=pointer]:
+          - /url: /work
+        - link "360° Recce" [ref=f55e16] [cursor=pointer]:
+          - /url: /recce
+      - generic [ref=f55e17]:
+        - generic [ref=f55e18]:
+          - button "Plan my shoot" [ref=f55e19] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=f55e20] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - button "Account" [ref=f55e21]
+  - main [ref=f55e22]:
+    - generic [ref=f55e23]:
+      - paragraph [ref=f55e24]: Rates
+      - heading "Pricing" [level=1] [ref=f55e25]
+      - paragraph [ref=f55e26]: These amounts are sample figures for each room. They are not a confirmed price, and they are not guaranteed for every studio. The quote the studio sends is the one that holds.
+    - generic [ref=f55e27]:
+      - paragraph [ref=f55e28]:
+        - text: Illustrative rate card
+        - generic [ref=f55e29]: Sample
+      - table [ref=f55e30]:
+        - rowgroup [ref=f55e31]:
+          - row [ref=f55e32]:
+            - columnheader "Studio" [ref=f55e33]
+            - columnheader "Hourly" [ref=f55e34]
+            - columnheader "Half day" [ref=f55e35]
+            - columnheader "Full day" [ref=f55e36]
+        - rowgroup [ref=f55e37]:
+          - row [ref=f55e38]:
+            - cell "Empty Studio Space" [ref=f55e39]
+            - cell "₹4,500" [ref=f55e40]
+            - cell "₹18,000" [ref=f55e41]
+            - cell "₹32,000" [ref=f55e42]
+          - row [ref=f55e43]:
+            - cell "Green Screen Studio" [ref=f55e44]
+            - cell "₹5,500" [ref=f55e45]
+            - cell "₹22,000" [ref=f55e46]
+            - cell "₹38,000" [ref=f55e47]
+          - row [ref=f55e48]:
+            - cell "The House Setup" [ref=f55e49]
+            - cell "₹6,000" [ref=f55e50]
+            - cell "₹24,000" [ref=f55e51]
+            - cell "₹42,000" [ref=f55e52]
+          - row [ref=f55e53]:
+            - cell "White Cyclorama Setup" [ref=f55e54]
+            - cell "₹7,000" [ref=f55e55]
+            - cell "₹28,000" [ref=f55e56]
+            - cell "₹48,000" [ref=f55e57]
+          - row [ref=f55e58]:
+            - cell "Podcast Setup" [ref=f55e59]
+            - cell "₹3,500" [ref=f55e60]
+            - cell "₹14,000" [ref=f55e61]
+            - cell "₹24,000" [ref=f55e62]
+          - row [ref=f55e63]:
+            - cell "Garden Area" [ref=f55e64]
+            - cell "₹4,000" [ref=f55e65]
+            - cell "₹16,000" [ref=f55e66]
+            - cell "₹28,000" [ref=f55e67]
+          - row [ref=f55e68]:
+            - cell "Lawn Area" [ref=f55e69]
+            - cell "₹8,000" [ref=f55e70]
+            - cell "₹32,000" [ref=f55e71]
+            - cell "₹55,000" [ref=f55e72]
+      - button "Get my quote" [ref=f55e74]
+  - contentinfo [ref=f55e75]:
+    - generic [ref=f55e76]:
+      - generic [ref=f55e77]:
+        - link [ref=f55e78] [cursor=pointer]:
+          - /url: /
+          - img "Pinhole Studio" [ref=f55e79]
+        - paragraph [ref=f55e80]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=f55e81] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=f55e82]:
+        - paragraph [ref=f55e83]: Contact
+        - list [ref=f55e84]:
+          - listitem [ref=f55e85]:
+            - link "+91 85069 05757" [ref=f55e86] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=f55e87]:
+            - link "+91 99997 63457" [ref=f55e88] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=f55e89]:
+            - link "+91 98186 37485" [ref=f55e90] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=f55e91]:
+            - link "pinholestudioz@gmail.com" [ref=f55e92] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=f55e93]:
+        - paragraph [ref=f55e94]: Visit
+        - list [ref=f55e95]:
+          - listitem [ref=f55e96]:
+            - link "About" [ref=f55e97] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=f55e98]:
+            - link "Studios" [ref=f55e99] [cursor=pointer]:
+              - /url: /studios
+          - listitem [ref=f55e100]:
+            - link "Work" [ref=f55e101] [cursor=pointer]:
+              - /url: /work
+          - listitem [ref=f55e102]:
+            - link "Pricing" [ref=f55e103] [cursor=pointer]:
+              - /url: /pricing
+    - generic [ref=f55e104]:
+      - list [ref=f55e105]:
+        - listitem [ref=f55e106]:
+          - link "Booking T&C" [ref=f55e107] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=f55e108]:
+          - link "Events T&C" [ref=f55e109] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=f55e110]:
+          - link "Shoot / Production P&P" [ref=f55e111] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=f55e112]:
+          - link "Event P&P" [ref=f55e113] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=f55e114] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=f55e115]: Photos are from Pinhole Studio. Rates and some stories stay marked sample until the studio confirms them.
+  - button "Open studio assistant" [ref=f55e117]
+  - link "Chat on WhatsApp" [ref=f55e119] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f55e125] [cursor=pointer]

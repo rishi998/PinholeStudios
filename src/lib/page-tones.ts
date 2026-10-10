@@ -43,31 +43,7 @@ function lightTone(hue: number): PageTone {
   };
 }
 
-function darkTone(hue: number): PageTone {
-  return {
-    "--background": `oklch(0.24 0.045 ${hue})`,
-    "--foreground": `oklch(0.96 0.015 ${hue})`,
-    "--card": `oklch(0.3 0.04 ${hue})`,
-    "--card-foreground": `oklch(0.96 0.015 ${hue})`,
-    "--popover": `oklch(0.32 0.04 ${hue})`,
-    "--popover-foreground": `oklch(0.96 0.015 ${hue})`,
-    "--muted": `oklch(0.33 0.035 ${hue})`,
-    "--muted-foreground": `oklch(0.82 0.02 ${hue})`,
-    "--secondary": `oklch(0.33 0.035 ${hue})`,
-    "--secondary-foreground": `oklch(0.96 0.015 ${hue})`,
-    "--accent": `oklch(0.36 0.04 ${hue})`,
-    "--accent-foreground": `oklch(0.96 0.015 ${hue})`,
-    "--border": `oklch(0.96 0.02 ${hue} / 14%)`,
-    "--glass-bg": `oklch(0.26 0.04 ${hue} / 84%)`,
-    "--glass-border": `oklch(0.96 0.02 ${hue} / 14%)`,
-    "--text-soft": `oklch(0.86 0.02 ${hue})`,
-    "--text-muted": `oklch(0.76 0.02 ${hue})`,
-    "--bg-0": `oklch(0.24 0.045 ${hue})`,
-  };
-}
-
 const light = Object.fromEntries(Object.entries(pages).map(([key, hue]) => [key, lightTone(hue)])) as Record<PageKey, PageTone>;
-const dark = Object.fromEntries(Object.entries(pages).map(([key, hue]) => [key, darkTone(hue)])) as Record<PageKey, PageTone>;
 
 function pageKey(pathname: string): PageKey {
   if (pathname.startsWith("/admin")) return "admin";
@@ -87,7 +63,6 @@ function pageKey(pathname: string): PageKey {
   return "home";
 }
 
-export function toneFor(pathname: string, darkMode: boolean) {
-  const key = pageKey(pathname);
-  return darkMode ? dark[key] : light[key];
+export function toneFor(pathname: string) {
+  return light[pageKey(pathname)];
 }

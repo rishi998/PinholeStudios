@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useMemo, useState } from "react";
 
 import { EnquirySuccess } from "@/components/enquiry/enquiry-success";
+import { clearReceipt, useReceipt, writeReceipt } from "@/lib/enquiry-receipt";
 import { SampleBadge } from "@/components/ui/sample-badge";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
@@ -16,21 +17,23 @@ import { submitEnquiry } from "@/lib/enquiries";
 import { estimateQuote, formatInr } from "@/lib/quote";
 import { siteConfig } from "@/lib/site.config";
 
-export function QuoteDrawer({ studioSlug }: { studioSlug?: string }) {
+export function QuoteDrawer({ studioSlug, triggerVariant = "secondary" }: { studioSlug?: string; triggerVariant?: "default" | "secondary" }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [slug, setSlug] = useState(studioSlug ?? studios[0]?.slug ?? "");
   const [mode, setMode] = useState<"hourly" | "half" | "full">("half");
   const [hours, setHours] = useState(4);
   const [picked, setPicked] = useState<string[]>([]);
-  const [href, setHref] = useState<string>();
+  const [pending, setPending] = useState(false);
   const [error, setError] = useState<string>();
   const quote = useMemo(() => estimateQuote({ studioSlug: slug, mode, hours, addonIds: picked }), [slug, mode, hours, picked]);
+  const receiptKey = `quote:${pathname}`;
+  const saved = useReceipt(receiptKey);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger
-        render={<Button variant="secondary" />}
+        render={<Button variant={triggerVariant} />}
         onClick={() => track("quote_click", { page: pathname, studio: slug })}
       >
         Get my quote
@@ -39,14 +42,22 @@ export function QuoteDrawer({ studioSlug }: { studioSlug?: string }) {
         <SheetHeader>
           <SheetTitle>Quote builder</SheetTitle>
         </SheetHeader>
-        {href ? (
-          <EnquirySuccess href={href} />
+        {saved ? (
+          <EnquirySuccess
+            href={saved.href}
+            reference={saved.reference}
+            onDismiss={() => {
+              clearReceipt(receiptKey);
+            }}
+          />
         ) : (
           <form
+            method="post"
             className="grid gap-4 px-4 pb-6"
             onSubmit={async (event) => {
               event.preventDefault();
-              if (!quote) return;
+              if (!quote || pending) return;
+              setPending(true);
               const data = new FormData(event.currentTarget);
               const message = [
                 `Hi Pinhole Studio, please share a quote for ${quote.studio.name}.`,
@@ -56,21 +67,30 @@ export function QuoteDrawer({ studioSlug }: { studioSlug?: string }) {
                 `Name: ${String(data.get("name") ?? "")}`,
                 `Phone: ${String(data.get("phone") ?? "")}`,
               ].join("\n");
-              const result = await submitEnquiry({
-                type: "quote",
-                name: String(data.get("name") ?? ""),
-                phone: String(data.get("phone") ?? ""),
-                email: String(data.get("email") ?? ""),
-                message,
-                sourcePage: pathname,
-                company: String(data.get("company") ?? ""),
-              });
+              let result: Awaited<ReturnType<typeof submitEnquiry>>;
+              try {
+                result = await submitEnquiry({
+                  type: "quote",
+                  name: String(data.get("name") ?? ""),
+                  phone: String(data.get("phone") ?? ""),
+                  email: String(data.get("email") ?? ""),
+                  message,
+                  sourcePage: pathname,
+                  company: String(data.get("company") ?? ""),
+                });
+              } catch {
+                setError("Could not save that quote. You can still write on WhatsApp.");
+                setPending(false);
+                return;
+              }
               if (!result.ok) {
                 setError(result.error);
+                setPending(false);
                 return;
               }
               track("quote_submit", { page: pathname, studio: slug });
-              setHref(result.href);
+              writeReceipt(receiptKey, { href: result.href, reference: result.id });
+              setPending(false);
             }}
           >
             <label className="grid gap-2 text-sm">
@@ -131,7 +151,7 @@ export function QuoteDrawer({ studioSlug }: { studioSlug?: string }) {
             </Field>
             <input name="company" className="hidden" tabIndex={-1} autoComplete="off" />
             {error ? <p className="text-sm text-destructive">{error}</p> : null}
-            <Button type="submit">Send quote request on WhatsApp</Button>
+            <Button type="submit" loading={pending}>Send quote request on WhatsApp</Button>
           </form>
         )}
       </SheetContent>

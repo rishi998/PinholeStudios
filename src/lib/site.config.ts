@@ -16,10 +16,11 @@ export const siteConfig = {
     instagram: "",
     facebook: "",
   },
-  ecosystem: [
-    { label: "Pinhole Filmcity", href: "/#coming-soon" },
-    { label: "Pinhole Media", href: "/#coming-soon" },
-    { label: "Pinhole Studio", href: "/" },
+  visit: [
+    { label: "About", href: "/about" },
+    { label: "Studios", href: "/studios" },
+    { label: "Work", href: "/work" },
+    { label: "Pricing", href: "/pricing" },
   ],
   pricing: { mode: "exact" as "exact" | "range" },
   googleReviewsUrl: "",

@@ -1,5 +1,12 @@
 # Media credits
 
-No stock files have been downloaded yet. Add `PEXELS_API_KEY` to `.env.local`, then run `pnpm media:fetch`.
+Photographs, the logo, the favicon, service rate cards, and the homepage showreel were downloaded from the public Pinhole Studio site, https://pinholestudio.in/, on 10 Oct 2026.
 
-Until then, the site uses generated aperture marks, lighting, and designed 3D sets. Those are not photographs of Pinhole Studio. When stock arrives, treat it as sample imagery and replace it by dropping client files in `public/media/custom/<slot>/`.
+- Files live in `public/media/custom/`.
+- Source URLs and download results are in `src/data/pinhole-media-report.json`.
+- The typed inventory is `src/data/pinhole-media.ts`.
+- The 360 tour is embedded from CloudPano. It is not downloaded. URL: `https://app.cloudpano.com/tours/WB5YSd4dWBak?sceneId=hVMu_wGjCM`.
+
+Channel logos on the original site (Netflix, Prime Video, Zee, Colors, Star Plus) were not copied. Reviewer portraits were not copied, because this app still uses sample review text.
+
+The studio pages on pinholestudio.in also share a large extra gallery. This app uses the photos that are specific to each studio, not that shared dump.

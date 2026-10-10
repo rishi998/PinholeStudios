@@ -1,22 +1,21 @@
 "use server";
 
-import { randomUUID } from "node:crypto";
 import { eq } from "drizzle-orm";
 import { headers } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 
 import { db } from "@/db";
-import { LEAD_STATUSES, enquiry, eventLog } from "@/db/schema";
+import { LEAD_STATUSES, enquiry } from "@/db/schema";
+import { saveEnquiry } from "@/lib/lead";
 import { rateLimit } from "@/lib/rate-limit";
 import { getSession, requireAdmin } from "@/lib/session";
-import { waLink } from "@/lib/whatsapp";
 
 const schema = z.object({
   type: z.string().min(1).max(40),
   name: z.string().min(2).max(80),
   email: z.string().email().optional().or(z.literal("")),
-  phone: z.string().min(8).max(20),
+  phone: z.string().trim().min(1).max(20),
   message: z.string().min(4).max(4000),
   sourcePage: z.string().min(1).max(200),
   company: z.string().max(0).optional(),
@@ -35,26 +34,7 @@ export async function submitEnquiry(input: z.infer<typeof schema>) {
   }
 
   const session = await getSession();
-  const id = randomUUID();
-  await db.insert(enquiry).values({
-    id,
-    type: parsed.data.type,
-    name: parsed.data.name,
-    email: parsed.data.email || null,
-    phone: parsed.data.phone,
-    message: parsed.data.message,
-    sourcePage: parsed.data.sourcePage,
-    userId: session?.user.id,
-    payload: parsed.data.payload,
-  });
-  await db.insert(eventLog).values({
-    id: randomUUID(),
-    name: parsed.data.type === "quote" ? "quote_submit" : "form_submit",
-    page: parsed.data.sourcePage,
-    payload: parsed.data.type,
-  });
-
-  return { ok: true as const, href: waLink(parsed.data.message), id };
+  return saveEnquiry({ ...parsed.data, userId: session?.user.id });
 }
 
 export async function setEnquiryStatus(id: string, status: string, notes: string) {

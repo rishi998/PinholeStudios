@@ -6,6 +6,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 import { WhatsAppLink } from "@/components/layout/whatsapp-link";
 import { StudioImage } from "@/components/studios/studio-image";
+import { studioPhotos } from "@/data/pinhole-media";
 import { Badge } from "@/components/ui/badge";
 import { mustOptions, shootOptions, type MustHave, type ShootType } from "@/data/studios";
 import { track } from "@/lib/analytics";
@@ -31,16 +32,21 @@ export function StudioFinder({ compact = false }: { compact?: boolean }) {
   }
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-4 py-12">
-      <h2 className="font-display text-[clamp(1.75rem,4vw,3rem)] font-semibold">Which studio do I need?</h2>
-      <p className="mt-2 text-muted-foreground">I&apos;m shooting a…</p>
-      <div className="mt-4 flex gap-2 overflow-x-auto pb-2">
+    <section>
+      <h2 className="font-display text-[clamp(2rem,4vw,3.25rem)] leading-[0.95] font-extrabold tracking-[-0.04em]">
+        Which studio do I <em className="font-serif text-[var(--ember)] italic">need</em>?
+      </h2>
+      <p className="mt-3 text-muted-foreground">I&apos;m shooting a…</p>
+      <div className="mt-5 flex gap-2 overflow-x-auto pb-2">
         {shootOptions.map((option) => (
           <button
             key={option.id}
             type="button"
             aria-pressed={shoot === option.id}
-            className={cn("h-11 shrink-0 rounded-full border px-4 text-sm", shoot === option.id ? "bg-primary text-primary-foreground" : "border-border")}
+            className={cn(
+              "h-11 shrink-0 rounded-full border px-4 text-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+              shoot === option.id ? "border-transparent bg-[var(--ember)] text-[oklch(0.2_0.03_50)]" : "border-border"
+            )}
             onClick={() => update(shoot === option.id ? undefined : option.id, must)}
           >
             {option.label}
@@ -56,7 +62,10 @@ export function StudioFinder({ compact = false }: { compact?: boolean }) {
                 key={option.id}
                 type="button"
                 aria-pressed={on}
-                className={cn("h-11 rounded-full border px-4 text-sm", on ? "bg-primary text-primary-foreground" : "border-border")}
+                className={cn(
+                  "h-11 rounded-full border px-4 text-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+                  on ? "border-transparent bg-[var(--ember)] text-[oklch(0.2_0.03_50)]" : "border-border"
+                )}
                 onClick={() => update(shoot, on ? must.filter((item) => item !== option.id) : [...must, option.id])}
               >
                 {option.label}
@@ -65,22 +74,26 @@ export function StudioFinder({ compact = false }: { compact?: boolean }) {
           })}
         </div>
       )}
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid gap-x-8 gap-y-12 sm:grid-cols-2">
         <AnimatePresence>
           {ranked.length === 0 ? (
             <WhatsAppLink placement="finder-empty">Tell us what you need</WhatsAppLink>
           ) : (
             ranked.map(({ studio, score }, index) => (
-              <motion.article layout key={studio.slug} className="overflow-hidden rounded-3xl border border-border bg-card">
-                <StudioImage swatch={studio.swatch} label={studio.name} className="h-36" />
-                <div className="grid gap-2 p-4">
-                  <div className="flex items-center justify-between gap-2">
-                    <h3 className="font-display text-xl">{studio.name}</h3>
-                    <Badge>{index === 0 && shoot ? "Best for your shoot" : `${score}%`}</Badge>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{studio.summary}</p>
-                  <Link href={`/studios/${studio.slug}`} className="text-sm underline-offset-4 hover:underline">View studio</Link>
-                </div>
+              <motion.article layout key={studio.slug}>
+                <Link href={`/studios/${studio.slug}`} className="group block rounded-[var(--radius)] focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none">
+                  <StudioImage
+                    swatch={studio.swatch}
+                    src={studioPhotos[studio.slug]?.[0]?.src}
+                    label={studioPhotos[studio.slug]?.[0]?.alt ?? studio.name}
+                    className="aspect-[4/3] rounded-[var(--radius)]"
+                  />
+                  <span className="mt-4 flex items-baseline justify-between gap-3">
+                    <span className="font-display text-2xl tracking-[-0.03em]">{studio.name}</span>
+                    {shoot ? <Badge>{index === 0 ? "Best for your shoot" : `${score}%`}</Badge> : null}
+                  </span>
+                  <span className="mt-2 block text-sm leading-relaxed text-muted-foreground">{studio.summary}</span>
+                </Link>
               </motion.article>
             ))
           )}

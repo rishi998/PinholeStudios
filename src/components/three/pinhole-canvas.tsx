@@ -110,7 +110,7 @@ export function PinholeCanvas({
       <Canvas
         aria-label="Animated studio graphic"
         camera={{ position: [0, 0.2, 4.4], fov: 42 }}
-        className="h-full! w-full!"
+        className="pointer-events-none h-full! w-full!"
         dpr={[1, 1.5]}
         frameloop={paused ? "demand" : "always"}
         gl={{ antialias: true, alpha: false }}

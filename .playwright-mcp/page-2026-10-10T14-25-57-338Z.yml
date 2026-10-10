@@ -1,0 +1,273 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Pinhole Studio" [ref=e7]
+      - navigation "Primary" [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about
+        - button "Studios" [ref=e12]
+        - button "Services" [ref=e14]
+        - link "Work" [ref=e15] [cursor=pointer]:
+          - /url: /work
+        - link "360° Recce" [ref=e16] [cursor=pointer]:
+          - /url: /recce
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - button "Plan my shoot" [ref=e19] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=e20] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - 'button "Theme: dark. Switch to system" [ref=e21]'
+        - button "Account" [ref=e22]
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: Pinhole Studio · New Delhi
+          - heading [level=1] [ref=e29]:
+            - text: Seven spaces.One
+            - emphasis [ref=e30]: frame
+            - text: at a time.
+          - paragraph [ref=e31]: A working lot in Kapashera for films, podcasts, and events. See the rooms, then hold a date.
+          - generic [ref=e32]:
+            - button "Plan my shoot" [ref=e33] [cursor=pointer]
+            - link "Chat on WhatsApp" [ref=e34] [cursor=pointer]:
+              - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+          - paragraph [ref=e35]:
+            - link "Check which dates are open" [ref=e36] [cursor=pointer]:
+              - /url: /availability
+        - figure "Showreel from the studio. Playback starts muted." [ref=e37]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: The lot
+            - heading [level=2] [ref=e44]:
+              - text: Choose the
+              - emphasis [ref=e45]: room
+          - paragraph [ref=e46]:
+            - link "Walk the lot in 360" [ref=e47] [cursor=pointer]:
+              - /url: /recce
+            - link "Open the floor plan" [ref=e48] [cursor=pointer]:
+              - /url: /demo
+        - list [ref=e49]:
+          - listitem [ref=e50]:
+            - link "Empty studio floor at Pinhole Studio Empty Studio Space 01 A large blank production floor for builds, commercials and shoots that need an open indoor space." [ref=e51] [cursor=pointer]:
+              - /url: /studios/empty-studio
+              - img "Empty studio floor at Pinhole Studio" [ref=e53]
+              - generic [ref=e54]:
+                - generic [ref=e55]: Empty Studio Space
+                - generic [ref=e56]: "01"
+              - generic [ref=e57]: A large blank production floor for builds, commercials and shoots that need an open indoor space.
+          - listitem [ref=e58]:
+            - link "Green screen studio Green Screen Studio 02 A chroma key studio for composites, explainers and commercial plates." [ref=e59] [cursor=pointer]:
+              - /url: /studios/green-screen-studio
+              - img "Green screen studio" [ref=e61]
+              - generic [ref=e62]:
+                - generic [ref=e63]: Green Screen Studio
+                - generic [ref=e64]: "02"
+              - generic [ref=e65]: A chroma key studio for composites, explainers and commercial plates.
+          - listitem [ref=e66]:
+            - 'link "House setup at Pinhole Studio The House Setup 03 Ready house environments: bedroom, living room, kitchen and dining area for narrative and lifestyle shoots." [ref=e67] [cursor=pointer]':
+              - /url: /studios/the-house-setup
+              - img "House setup at Pinhole Studio" [ref=e69]
+              - generic [ref=e70]:
+                - generic [ref=e71]: The House Setup
+                - generic [ref=e72]: "03"
+              - generic [ref=e73]: "Ready house environments: bedroom, living room, kitchen and dining area for narrative and lifestyle shoots."
+          - listitem [ref=e74]:
+            - link "White cyclorama White Cyclorama Setup 04 A seamless white cyclorama for product, fashion and commercial plates." [ref=e75] [cursor=pointer]:
+              - /url: /studios/white-cyclorama
+              - img "White cyclorama" [ref=e77]
+              - generic [ref=e78]:
+                - generic [ref=e79]: White Cyclorama Setup
+                - generic [ref=e80]: "04"
+              - generic [ref=e81]: A seamless white cyclorama for product, fashion and commercial plates.
+          - listitem [ref=e82]:
+            - link "Podcast setup Podcast Setup 05 A podcast and interview setup for conversations, YouTube and audio-led shows." [ref=e83] [cursor=pointer]:
+              - /url: /studios/podcast-setup
+              - img "Podcast setup" [ref=e85]
+              - generic [ref=e86]:
+                - generic [ref=e87]: Podcast Setup
+                - generic [ref=e88]: "05"
+              - generic [ref=e89]: A podcast and interview setup for conversations, YouTube and audio-led shows.
+          - listitem [ref=e90]:
+            - link "Garden area Garden Area 06 An outdoor garden area for cultural shoots, songs, events and natural-light scenes." [ref=e91] [cursor=pointer]:
+              - /url: /studios/garden-area
+              - img "Garden area" [ref=e93]
+              - generic [ref=e94]:
+                - generic [ref=e95]: Garden Area
+                - generic [ref=e96]: "06"
+              - generic [ref=e97]: An outdoor garden area for cultural shoots, songs, events and natural-light scenes.
+          - listitem [ref=e98]:
+            - link "Lawn area Lawn Area 07 An outdoor lawn for events, workshops and wide production setups." [ref=e99] [cursor=pointer]:
+              - /url: /studios/lawn-area
+              - img "Lawn area" [ref=e101]
+              - generic [ref=e102]:
+                - generic [ref=e103]: Lawn Area
+                - generic [ref=e104]: "07"
+              - generic [ref=e105]: An outdoor lawn for events, workshops and wide production setups.
+      - generic [ref=e107]:
+        - heading [level=2] [ref=e108]:
+          - text: What is already
+          - emphasis [ref=e109]: here
+        - generic [ref=e110]:
+          - generic [ref=e111]:
+            - term [ref=e112]: Indoor floors
+            - definition [ref=e113]: An empty production floor, a green screen, and a white cyclorama.
+          - generic [ref=e114]:
+            - term [ref=e115]: The house
+            - definition [ref=e116]: Bedroom, living room, kitchen, and dining, already dressed.
+          - generic [ref=e117]:
+            - term [ref=e118]: Outdoors
+            - definition [ref=e119]: A garden and a lawn on the same lot.
+          - generic [ref=e120]:
+            - term [ref=e121]: Podcast room
+            - definition [ref=e122]: A set built for interviews and long conversations.
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - paragraph [ref=e125]:
+            - text: Full-day rates
+            - generic [ref=e126]: Sample
+          - heading [level=2] [ref=e127]:
+            - text: A starting
+            - emphasis [ref=e128]: figure
+          - paragraph [ref=e129]: These full-day amounts are sample rates. The quote you send is the one the studio confirms.
+        - list [ref=e130]:
+          - listitem [ref=e131]:
+            - generic [ref=e132]:
+              - link "Empty Studio Space" [ref=e133] [cursor=pointer]:
+                - /url: /studios/empty-studio
+              - paragraph [ref=e134]: Ad films, product shoots, corporate production and set builds.
+            - paragraph [ref=e135]: ₹32,000
+          - listitem [ref=e136]:
+            - generic [ref=e137]:
+              - link "Green Screen Studio" [ref=e138] [cursor=pointer]:
+                - /url: /studios/green-screen-studio
+              - paragraph [ref=e139]: Ad films, training videos, news shows and product shoots that need a keyed background.
+            - paragraph [ref=e140]: ₹38,000
+          - listitem [ref=e141]:
+            - generic [ref=e142]:
+              - link "The House Setup" [ref=e143] [cursor=pointer]:
+                - /url: /studios/the-house-setup
+              - paragraph [ref=e144]: Short films, ads, interviews and lifestyle content that need a home setting.
+            - paragraph [ref=e145]: ₹42,000
+          - listitem [ref=e146]:
+            - generic [ref=e147]:
+              - link "White Cyclorama Setup" [ref=e148] [cursor=pointer]:
+                - /url: /studios/white-cyclorama
+              - paragraph [ref=e149]: Product shoots, ad films and brand campaigns that need a clean white background.
+            - paragraph [ref=e150]: ₹48,000
+          - listitem [ref=e151]:
+            - generic [ref=e152]:
+              - link "Podcast Setup" [ref=e153] [cursor=pointer]:
+                - /url: /studios/podcast-setup
+              - paragraph [ref=e154]: Podcasts, interviews and talk-format content.
+            - paragraph [ref=e155]: ₹24,000
+          - listitem [ref=e156]:
+            - generic [ref=e157]:
+              - link "Garden Area" [ref=e158] [cursor=pointer]:
+                - /url: /studios/garden-area
+              - paragraph [ref=e159]: Songs, cultural shoots, events and outdoor interviews.
+            - paragraph [ref=e160]: ₹28,000
+          - listitem [ref=e161]:
+            - generic [ref=e162]:
+              - link "Lawn Area" [ref=e163] [cursor=pointer]:
+                - /url: /studios/lawn-area
+              - paragraph [ref=e164]: Events, workshops, brand campaigns and outdoor production.
+            - paragraph [ref=e165]: ₹55,000
+        - button "Get my quote" [ref=e167] [cursor=pointer]
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - heading [level=2] [ref=e171]:
+            - text: Tell us the date.We will
+            - emphasis [ref=e172]: hold
+            - text: it.
+          - paragraph [ref=e173]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+          - link "Chat on WhatsApp" [ref=e175] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - generic [ref=e179]: Name
+            - textbox "Name" [ref=e181]
+          - generic [ref=e182]:
+            - generic [ref=e183]: Email
+            - textbox "Email" [ref=e185]
+          - generic [ref=e186]:
+            - generic [ref=e187]: Phone
+            - generic [ref=e189]:
+              - generic [ref=e190]: "+91"
+              - textbox "Phone" [ref=e191]
+          - generic [ref=e192]:
+            - generic [ref=e193]: Message
+            - textbox "Message" [ref=e195]
+          - button "Submit" [ref=e196]
+  - contentinfo [ref=e197]:
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - link [ref=e200] [cursor=pointer]:
+          - /url: /
+          - img "Pinhole Studio" [ref=e201]
+        - paragraph [ref=e202]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=e203] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=e204]:
+        - paragraph [ref=e205]: Contact
+        - list [ref=e206]:
+          - listitem [ref=e207]:
+            - link "+91 85069 05757" [ref=e208] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=e209]:
+            - link "+91 99997 63457" [ref=e210] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=e211]:
+            - link "+91 98186 37485" [ref=e212] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=e213]:
+            - link "pinholestudioz@gmail.com" [ref=e214] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=e215]:
+        - paragraph [ref=e216]: Brand
+        - list [ref=e217]:
+          - listitem [ref=e218]:
+            - link "Pinhole Filmcity" [ref=e219] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e220]:
+            - link "Pinhole Media" [ref=e221] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e222]:
+            - link "Pinhole Studio" [ref=e223] [cursor=pointer]:
+              - /url: /
+    - generic [ref=e224]:
+      - list [ref=e225]:
+        - listitem [ref=e226]:
+          - link "Booking T&C" [ref=e227] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=e228]:
+          - link "Events T&C" [ref=e229] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=e230]:
+          - link "Shoot / Production P&P" [ref=e231] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=e232]:
+          - link "Event P&P" [ref=e233] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=e234] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=e235]: Photos are from Pinhole Studio. Rates and some stories stay marked sample until the studio confirms them.
+  - button "Open studio assistant" [ref=e237]
+  - link "Chat on WhatsApp" [ref=e239] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e245] [cursor=pointer]:
+    - generic [ref=e248]:
+      - text: Compiling
+      - generic [ref=e249]:
+        - generic [ref=e250]: .
+        - generic [ref=e251]: .
+        - generic [ref=e252]: .
+  - alert [ref=e253]

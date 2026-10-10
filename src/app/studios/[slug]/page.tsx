@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -13,10 +14,12 @@ import { FloorPlan } from "@/components/studios/floor-plan";
 import { SceneSlot } from "@/components/three/scene-slot";
 import { SampleBadge } from "@/components/ui/sample-badge";
 import { Button } from "@/components/ui/button";
+import { studioPhotos } from "@/data/pinhole-media";
 import { sampleReviews } from "@/data/site-content";
 import { getStudio, studios } from "@/data/studios";
 import { getService } from "@/data/services";
 import { availabilityFor } from "@/lib/queries";
+import { recceTourUrl } from "@/lib/recce";
 import { formatInr } from "@/lib/quote";
 import { siteConfig } from "@/lib/site.config";
 
@@ -48,13 +51,18 @@ export default async function StudioPage({ params }: { params: Promise<{ slug: s
   if (!studio) notFound();
   const rows = await availabilityFor(studio.slug);
   const reviews = sampleReviews.filter((review) => review.studio === studio.slug).slice(0, 3);
+  const photos = studioPhotos[studio.slug] ?? [];
   const price = (value: number) => (siteConfig.pricing.mode === "range" ? `${formatInr(studio.pricing.rangeHourly[0])}–${formatInr(studio.pricing.rangeHourly[1])}` : formatInr(value));
 
   return (
     <>
-      <PageIntro title={studio.name} lede={studio.description} />
-      <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 pb-16">
-        <SceneSlot kind="stage" color={stageColors[studio.slug]} className="h-[360px] overflow-hidden rounded-3xl border border-border" />
+      <PageIntro eyebrow={studio.index} title={studio.name} lede={studio.description} />
+      <div className="mx-auto grid w-full max-w-[var(--page-width)] gap-10 px-5 pt-8 pb-[var(--space-section)] md:px-8">
+        {photos[0] ? (
+          <Image src={photos[0].src} alt={photos[0].alt} width={1600} height={900} priority className="aspect-[16/9] h-auto w-full rounded-[var(--radius)] object-cover" />
+        ) : (
+          <SceneSlot kind="stage" color={stageColors[studio.slug]} className="aspect-[16/9] overflow-hidden rounded-[var(--radius)] border border-border" />
+        )}
         <div className="flex flex-wrap gap-3">
           <ShortlistButton slug={studio.slug} />
           <QuoteDrawer studioSlug={studio.slug} />
@@ -67,43 +75,49 @@ export default async function StudioPage({ params }: { params: Promise<{ slug: s
           </Button>
         </div>
         <p>{studio.suitability}</p>
-        <ul className="grid gap-2 md:grid-cols-2">
-          {studio.specs.map((spec) => (
-            <li key={spec.label} className="flex items-center justify-between gap-3 rounded-2xl border border-border bg-card/70 px-4 py-3">
-              <span>{spec.label}</span>
-              <span className="flex items-center gap-2 text-muted-foreground">
-                {spec.value}
-                <SampleBadge />
-              </span>
-            </li>
-          ))}
-        </ul>
+        <section>
+          <p className="flex items-center gap-3 text-sm text-muted-foreground">
+            Measurements below are sample figures until the studio confirms them.
+            <SampleBadge />
+          </p>
+          <ul className="mt-4 border-t border-border">
+            {studio.specs.map((spec) => (
+              <li key={spec.label} className="flex items-center justify-between gap-3 border-b border-border py-3">
+                <span>{spec.label}</span>
+                <span className="text-muted-foreground">{spec.value}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
         <FloorPlan {...studio.floor} />
-        <div className="grid gap-3 md:grid-cols-3">
-          {[
-            ["Hourly", price(studio.pricing.hourly)],
-            ["Half day", price(studio.pricing.halfDay)],
-            ["Full day", price(studio.pricing.fullDay)],
-          ].map(([label, value]) => (
-            <article key={label} className="rounded-3xl border border-border bg-[linear-gradient(160deg,#2a1d12,#141210)] p-5">
-              <p className="text-sm text-muted-foreground">{label}</p>
-              <p className="mt-2 flex items-center gap-2 font-display text-2xl">
-                {value}
-                <SampleBadge />
-              </p>
-              {studio.pricing.popular && label === "Half day" ? <p className="mt-2 text-sm text-primary">Popular</p> : null}
-              <p className="mt-2 text-sm text-muted-foreground">Includes {studio.pricing.includes.join(", ")}</p>
-            </article>
-          ))}
-        </div>
+        <section>
+          <p className="flex items-center gap-3 text-sm text-muted-foreground">
+            These rates are sample figures for this room. They are not a confirmed booking price.
+            <SampleBadge />
+          </p>
+          <div className="mt-4 grid border-t border-border md:grid-cols-3">
+            {[
+              ["Hourly", price(studio.pricing.hourly)],
+              ["Half day", price(studio.pricing.halfDay)],
+              ["Full day", price(studio.pricing.fullDay)],
+            ].map(([label, value]) => (
+              <article key={label} className="border-b border-border py-5 md:border-b-0 md:px-6 md:first:pl-0">
+                <p className="text-sm text-muted-foreground">{label}</p>
+                <p className="mt-2 font-display text-3xl tracking-[-0.03em]">{value}</p>
+                {studio.pricing.popular && label === "Half day" ? <p className="mt-2 text-sm text-[var(--ember)]">Often requested</p> : null}
+                <p className="mt-2 text-sm text-muted-foreground">Includes {studio.pricing.includes.join(", ")}</p>
+              </article>
+            ))}
+          </div>
+        </section>
         {studio.setups ? <HouseTabs setups={studio.setups} /> : null}
-        <StudioGallery name={studio.name} swatch={studio.swatch} />
+        <StudioGallery name={studio.name} swatch={studio.swatch} photos={photos} />
         <div className="grid gap-6 md:grid-cols-3">
           <List title="Facilities" items={studio.facilities} />
           <List title="Use cases" items={studio.useCases} />
           <List title="Amenities" items={[...studio.amenities, ...studio.equipment]} />
         </div>
-        <RecceViewer title={studio.name} url={process.env.NEXT_PUBLIC_RECCE_URL} />
+        <RecceViewer title={studio.name} url={recceTourUrl} />
         <AvailabilityCalendar studioSlug={studio.slug} rows={rows.map((row) => ({ date: row.date, slot: row.slot, state: row.state }))} />
         <ul className="grid gap-3 md:grid-cols-2">
           {reviews.map((review) => (
@@ -145,7 +159,7 @@ function List({ title, items }: { title: string; items: string[] }) {
       <h2 className="font-display text-2xl">{title}</h2>
       <ul className="mt-3 grid gap-2">
         {items.map((item) => (
-          <li key={item} className="rounded-2xl border border-border bg-card/60 px-3 py-2">
+          <li key={item} className="border-b border-border py-2 text-sm">
             {item}
           </li>
         ))}

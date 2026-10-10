@@ -27,7 +27,6 @@ export function WorkBrowser() {
   const category = params.get("cat") ?? "All";
   const items = workItems.filter((item) => category === "All" || item.category === category);
   const [active, setActive] = useState<string | null>(null);
-  const [playing, setPlaying] = useState(false);
   const current = workItems.find((item) => item.id === active);
 
   return (
@@ -37,21 +36,27 @@ export function WorkBrowser() {
           <button
             key={item}
             type="button"
-            className={`h-11 shrink-0 rounded-full px-4 text-sm ${category === item ? "bg-primary text-primary-foreground" : "border border-border bg-card"}`}
+            className={`h-11 shrink-0 rounded-full px-4 text-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none ${category === item ? "bg-[var(--ember)] text-[oklch(0.2_0.03_50)]" : "border border-border"}`}
             onClick={() => router.replace(item === "All" ? "/work" : `/work?cat=${encodeURIComponent(item)}`, { scroll: false })}
           >
             {item}
           </button>
         ))}
       </div>
-      <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid gap-x-8 gap-y-12 sm:grid-cols-2">
         {items.map((item) => (
-          <li key={item.id}>
-            <button type="button" className="block w-full overflow-hidden rounded-3xl text-left" onClick={() => { setActive(item.id); setPlaying(false); }}>
-              <StudioImage swatch={swatches[item.category] ?? "from-amber-500 to-stone-900"} label={item.title} className="h-48" />
-              <span className="mt-2 flex items-center gap-2 text-sm">
+          <li key={item.id} className={"videoSrc" in item ? "sm:col-span-2" : undefined}>
+            <button type="button" className="block w-full rounded-[var(--radius)] text-left focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none" onClick={() => setActive(item.id)}>
+              {"videoSrc" in item ? (
+                <span className="relative block overflow-hidden rounded-[var(--radius)] bg-[oklch(0.16_0.012_50)]">
+                  <video className="block aspect-[1920/1080] w-full object-contain" src={item.videoSrc} muted playsInline preload="metadata" />
+                </span>
+              ) : (
+                <StudioImage swatch={swatches[item.category] ?? "from-amber-500 to-stone-900"} src={"image" in item ? item.image : undefined} label={item.title} className="aspect-[4/3] rounded-[var(--radius)]" />
+              )}
+              <span className="mt-3 flex items-center gap-2 font-display text-xl tracking-[-0.03em]">
                 {item.title}
-                <SampleBadge />
+                {item.isSample ? <SampleBadge /> : null}
               </span>
             </button>
           </li>
@@ -60,18 +65,10 @@ export function WorkBrowser() {
       <Dialog open={Boolean(current)} onOpenChange={(open) => setActive(open ? active : null)}>
         <DialogContent className="max-w-3xl">
           <DialogTitle>{current?.title}</DialogTitle>
-          {current?.kind === "video" && "vimeoId" in current ? (
-            playing ? (
-              <iframe className="aspect-video w-full rounded-2xl" src={`https://player.vimeo.com/video/${current.vimeoId}`} title={current.title} allow="autoplay; fullscreen" />
-            ) : (
-              <button type="button" className="relative block w-full" onClick={() => setPlaying(true)}>
-                <StudioImage swatch={swatches[current.category] ?? "from-amber-500 to-stone-900"} label="Play sample film" className="h-64 rounded-2xl" />
-              </button>
-            )
-          ) : current?.kind === "instagram" ? (
-            <p className="text-sm text-muted-foreground">Instagram cards stay as styled previews. Add a profile URL in site config to link out.</p>
+          {current && "videoSrc" in current ? (
+            <video className="block aspect-[1920/1080] w-full rounded-[var(--radius)] bg-[oklch(0.16_0.012_50)] object-contain" src={current.videoSrc} controls playsInline />
           ) : current ? (
-            <StudioImage swatch={swatches[current.category] ?? "from-amber-500 to-stone-900"} label={current.title} className="h-64 rounded-2xl" />
+            <StudioImage swatch={swatches[current.category] ?? "from-amber-500 to-stone-900"} src={"image" in current ? current.image : undefined} label={current.title} className="h-64 rounded-2xl" />
           ) : null}
           {current ? (
             <Button nativeButton={false} render={<a href={waLink(`Hi Pinhole Studio, I'd like to book a similar ${current.category} shoot.`)} target="_blank" rel="noreferrer" />}>

@@ -29,7 +29,7 @@ export function MobileActionBar() {
   const phone = siteConfig.phones[0]
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-[var(--glass-bg)] px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))] backdrop-blur-xl md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-background px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))] md:hidden">
       <div className="grid grid-cols-3 gap-2">
         <a
           href={`tel:${phone.tel}`}

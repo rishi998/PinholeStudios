@@ -9,7 +9,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+      <ThemeProvider attribute="class" forcedTheme="light" enableSystem={false} disableTransitionOnChange>
       <MotionConfig reducedMotion="user">
         <TooltipProvider>
           <ShellProvider>{children}</ShellProvider>

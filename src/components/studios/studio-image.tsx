@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { cn } from "cn";
 
 export function StudioImage({
@@ -12,7 +14,11 @@ export function StudioImage({
   src?: string;
 }) {
   if (src) {
-    return <img src={src} alt={label} className={cn("h-full w-full object-cover", className)} />;
+    return (
+      <span className={cn("relative block overflow-hidden", className)}>
+        <Image src={src} alt={label} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+      </span>
+    );
   }
   return (
     <div className={cn("relative grid place-items-end overflow-hidden bg-linear-to-br p-4", swatch, className)} role="img" aria-label={label}>

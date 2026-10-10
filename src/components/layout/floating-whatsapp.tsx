@@ -9,14 +9,11 @@ export function FloatingWhatsApp() {
   if (menuOpen) return null
 
   return (
-    <div className="fixed right-3 bottom-[calc(5.25rem+env(safe-area-inset-bottom))] z-30 md:right-6 md:bottom-6 md:z-40">
+    <div className="fixed right-6 bottom-6 z-40 hidden md:block">
       <Tooltip>
         <TooltipTrigger
           render={
-            <span className="relative inline-flex">
-              <span className="absolute inset-0 animate-ping rounded-full bg-whatsapp/40 motion-reduce:hidden" />
-              <WhatsAppLink placement="floating" iconOnly className="relative" />
-            </span>
+            <WhatsAppLink placement="floating" iconOnly />
           }
         />
         <TooltipContent>Chat on WhatsApp</TooltipContent>

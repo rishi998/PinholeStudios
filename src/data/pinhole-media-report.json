@@ -1,0 +1,325 @@
+{
+  "generatedAt": "2026-10-10T14:05:36.990Z",
+  "report": [
+    {
+      "relative": "branding/logo.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Logo-Pinhole.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 138755,
+      "sha256": "5b6769e7db54b913e6ff6816767fdf4f430135f1532fd7bb69bc35c23003db2d"
+    },
+    {
+      "relative": "branding/favicon.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Pinhole-Studio-Favicon.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 58691,
+      "sha256": "d1b407c4640973c81296b280dfa6683c6f781a24bdfcecea5a8b7362a8867b54"
+    },
+    {
+      "relative": "branding/pinhole-media.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Pinhole-Media.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 814439,
+      "sha256": "4d378a4e1c96c763471827f23c34e184e4b5d32c127740ec84aae6917d452c2c"
+    },
+    {
+      "relative": "homepage/showreel.mp4",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/03/pinhole-studio-video.mp4",
+      "status": "downloaded",
+      "mimeType": "video/mp4",
+      "bytes": 46038705,
+      "sha256": "69acc45cbce4ceb69926dd99bd541d8bef9513116982ff87d33096f6a49b6b57"
+    },
+    {
+      "relative": "homepage/about.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/6F86C7C3-2EAF-44C4-9600-1C93A41F0604_1_201_a.jpeg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 153406,
+      "sha256": "88755954e48c5d4e57f48ba2563f3adcbe182c04fb4e1df132a6b47910956537"
+    },
+    {
+      "relative": "studios/empty-studio/01.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/empty-studio-1-scaled.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 167677,
+      "sha256": "b3e91a931747157e7a684968a32173521502e6c8a96cc982ae863c21217ccfc7"
+    },
+    {
+      "relative": "studios/empty-studio/02.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/empty-studio-6.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 186041,
+      "sha256": "51cf1e52e4e3c6b4df8790ac44a840066656baaddd89252a9cb0b0c334ef6448"
+    },
+    {
+      "relative": "studios/empty-studio/03.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/empty-studio-13.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 199059,
+      "sha256": "09287f3a6e4989f32793f9658c2f30eb493d62c278e7eb7e92280e35a1f6aede"
+    },
+    {
+      "relative": "studios/empty-studio/04.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/empty-studio-18-scaled.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 174556,
+      "sha256": "f82c70ceb65b8cbb8c46566b0e448d63bfb777e97b2ea5cb878ebb04e70d497c"
+    },
+    {
+      "relative": "studios/green-screen-studio/01.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Green-Screen-01-1.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 198063,
+      "sha256": "6914c40c850d68106b0cba021335682d7e58766e15a2cce14e723dc4516e6225"
+    },
+    {
+      "relative": "studios/green-screen-studio/02.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Green-Screen-04.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 222959,
+      "sha256": "6f6c88a18d8fc6e11dd7d8612546262c80c55cd8cdeabbf22d0cb3fa8b8bdd4a"
+    },
+    {
+      "relative": "studios/green-screen-studio/03.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Green-Screen-08.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 212913,
+      "sha256": "5aff1d1bb02c2dd95088b99abafa17d9d3c3e3494f369a4a87c913e4e7af61f4"
+    },
+    {
+      "relative": "studios/green-screen-studio/04.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Green-Cyclorama-1.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 201346,
+      "sha256": "7ccebd1bdd419051143cf593fb62370f094f7016b66c7a2409892810f1c40906"
+    },
+    {
+      "relative": "studios/the-house-setup/01.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/06/The-House-Setup-Images.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 237501,
+      "sha256": "28e3e14069c76e97b288cdfde10063870befb472929dd4f002086c2092bb020e"
+    },
+    {
+      "relative": "studios/the-house-setup/02.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Bedroom-1-1.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 90360,
+      "sha256": "a8c916f7e22d71e05d2cab75fbe588cd24db23fd75e5ffd8ba47acd0121fcee2"
+    },
+    {
+      "relative": "studios/the-house-setup/03.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/File-kitchen3.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 204144,
+      "sha256": "9d68c40a05ba2e24d197fa3a2aba9f4d70fbf2b77c057fd287c56c0d094fc230"
+    },
+    {
+      "relative": "studios/the-house-setup/04.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/223A0092.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 190314,
+      "sha256": "b87d3daa7deceaf05c5671e341209b1cf99af242cdf50fc0951c99d658a3b4c9"
+    },
+    {
+      "relative": "studios/white-cyclorama/01.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/White-Cyclorama-Setup.jpeg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 208927,
+      "sha256": "95ce26907c9deef9e0b597ed580a5c53a329f0b5437cdb930bbf2cb416d5ce1d"
+    },
+    {
+      "relative": "studios/white-cyclorama/02.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-13.31.25.jpeg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 155752,
+      "sha256": "595531f74dc4918c53f7adac1caf036054e32d2801b20e1fda55eecfd03e44e3"
+    },
+    {
+      "relative": "studios/podcast-setup/01.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Pinhole-Studio-Deck-1-21.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 1112239,
+      "sha256": "3c6efdd3e449128fe22e963891475634411ea6ff5032011b066e0faf2654f349"
+    },
+    {
+      "relative": "studios/podcast-setup/02.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Pinhole-Studio-Deck-1-22.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 801229,
+      "sha256": "1b96c1ded749d48d3df96a7beacb3202dec88703449054401d6edeb5fa4d93a2"
+    },
+    {
+      "relative": "studios/podcast-setup/03.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Pinhole-Studio-Deck-1-23.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 926592,
+      "sha256": "d874704008cec078f409a17efe90f13cdc1ef200bc9ca603240ec0385d938c17"
+    },
+    {
+      "relative": "studios/garden-area/01.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/223A0012.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 264564,
+      "sha256": "f7e5aeacbba39fcee3173c0701b8f582889dbdc909fb22c2689050bebf45462f"
+    },
+    {
+      "relative": "studios/garden-area/02.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/223A0013.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 265950,
+      "sha256": "5915fd9f6e551ee3890024830486751a1f2d864718f0d0c23bd7b249f06f7e05"
+    },
+    {
+      "relative": "studios/garden-area/03.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/837A0524.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 234193,
+      "sha256": "e94f8c313be31b575e2dd5855521d2aa316bfb37098939857934b55d811e5a01"
+    },
+    {
+      "relative": "studios/garden-area/04.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/837A0545.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 230171,
+      "sha256": "40b21ce47b1d8e8ce3bb9f93293340b8d6c056326cbca813b8668c476245009b"
+    },
+    {
+      "relative": "studios/lawn-area/01.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/2C2A9342.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 255971,
+      "sha256": "b164d3a6f95b84c32ed5fdffc6e8b8765b496e195344c48e07d3a42a5c000ea8"
+    },
+    {
+      "relative": "studios/lawn-area/02.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/2C2A9351.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 297200,
+      "sha256": "2e6c3afc6050ba7456cf19e4a66bf038467dad58043a1aeaaf2893539e108625"
+    },
+    {
+      "relative": "studios/lawn-area/03.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/2C2A9412.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 269157,
+      "sha256": "3ad418e9e462d60a59b97e2a5758398465c3267f0986d678798236775303dbca"
+    },
+    {
+      "relative": "studios/lawn-area/04.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/223A0148.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 257491,
+      "sha256": "5b6d8867a5ad1722274637d1906a02a26bc831cb70c43f238d909ca4e0f710d4"
+    },
+    {
+      "relative": "portfolio/01.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/93233BAE-0C56-46D9-AFC1-079DE2028909_1_201_a.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 230135,
+      "sha256": "c621aa6fbb26572df5cf65275cabb709a2a65ffa26074bf2487a1ba3d30b2371"
+    },
+    {
+      "relative": "portfolio/02.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/12CC9A8B-7239-43CF-B141-311B55283593_1_201_a.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 221047,
+      "sha256": "4752d4b48b4da849e940138ddbe9760029d2fdeb79e015b370780834113ea9b9"
+    },
+    {
+      "relative": "portfolio/03.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/9A6480E4-E295-4D75-8C57-2DE3A738CF72_1_201_a.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 183527,
+      "sha256": "7055c04e707ea5cf57dd82a048e4a8e9e1a8e1f22795a31da75ecac278e3d294"
+    },
+    {
+      "relative": "portfolio/04.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/3DAF88E8-EC23-409F-9666-E9F326509493_1_201_a.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 218142,
+      "sha256": "6432b4c8ef071399d4fe27645c3f2e4b7ce27ec5125a37c703ca7dfa1237934c"
+    },
+    {
+      "relative": "portfolio/05.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/18251E1D-512F-4FAD-AD6F-F165DF35656B_1_201_a.jpeg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 123856,
+      "sha256": "b6cfc802c37c294c15240c51bf2b139979d1c993bd284c0204093fb0788b3438"
+    },
+    {
+      "relative": "portfolio/06.jpg",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/7DC4E1F7-DAEE-4B06-A25A-A19349154D8D_1_201_a.jpg",
+      "status": "downloaded",
+      "mimeType": "image/jpeg",
+      "bytes": 133051,
+      "sha256": "9fa864fc3675d870c47e081dc5646cedbe8d9fa75f453c13c233fcdb857c6ce1"
+    },
+    {
+      "relative": "services/event-rate-card.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Event-Company-Product-Launch-Rate-Card.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 417538,
+      "sha256": "61b68f62a40639583fee5d0214b8fd2b37b9abb64825d73636f9f735a6717db2"
+    },
+    {
+      "relative": "services/education-rate-card.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Education-Seminar-Workshop-Rate-Card.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 423905,
+      "sha256": "e2c060542e40e895b6604e94256a6f8f5ba25e0b1162aee2dcf26567780a8dda"
+    },
+    {
+      "relative": "services/creator-rate-card.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Content-Creator-Influencer-Rate-Card.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 390768,
+      "sha256": "c2c96b7d96b4bb62a0256017e531c2f5083999197cf9c26d479f16d8b1d8f2d6"
+    },
+    {
+      "relative": "services/agency-rate-card.png",
+      "sourceUrl": "https://pinholestudio.in/wp-content/uploads/2026/02/Agency-Production-House-Rate-Card.png",
+      "status": "downloaded",
+      "mimeType": "image/png",
+      "bytes": 393288,
+      "sha256": "a98dfb0e12d494d3b7087d87e61835011e74629ade3addcb6c229311a699c0e7"
+    }
+  ]
+}

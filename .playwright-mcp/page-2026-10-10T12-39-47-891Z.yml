@@ -1,0 +1,96 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "PINHOLE studio" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e21]:
+          - generic [ref=e22]: PINHOLE
+          - generic [ref=e23]: studio
+      - navigation "Primary" [ref=e24]:
+        - link "Home" [ref=e25] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e26] [cursor=pointer]:
+          - /url: /about
+        - button "Studios" [ref=e28]
+        - button "Services" [ref=e30]
+        - link "Work" [ref=e31] [cursor=pointer]:
+          - /url: /work
+        - link "360° Recce" [ref=e32] [cursor=pointer]:
+          - /url: /recce
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - button "Plan my shoot" [ref=e35] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=e36] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - 'button "Theme: dark. Switch to system" [ref=e37]'
+        - button "Account" [ref=e38]
+  - main [ref=e39]:
+    - generic [ref=e41]:
+      - heading "360° Recce" [level=1] [ref=e42]
+      - paragraph [ref=e43]: Walk each studio before you book. The pins mark the lighting grid and the entry.
+    - generic [ref=e44]:
+      - heading "Empty Studio Space" [level=2] [ref=e46]
+      - heading "Green Screen Studio" [level=2] [ref=e48]
+      - heading "The House Setup" [level=2] [ref=e50]
+      - heading "White Cyclorama Setup" [level=2] [ref=e52]
+      - heading "Podcast Setup" [level=2] [ref=e54]
+      - heading "Garden Area" [level=2] [ref=e56]
+      - heading "Lawn Area" [level=2] [ref=e58]
+  - contentinfo [ref=e59]:
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - paragraph [ref=e62]: PINHOLE
+        - paragraph [ref=e63]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=e64] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: Contact
+        - list [ref=e67]:
+          - listitem [ref=e68]:
+            - link "+91 85069 05757" [ref=e69] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=e70]:
+            - link "+91 99997 63457" [ref=e71] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=e72]:
+            - link "+91 98186 37485" [ref=e73] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=e74]:
+            - link "pinholestudioz@gmail.com" [ref=e75] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: Brand
+        - list [ref=e78]:
+          - listitem [ref=e79]:
+            - link "Pinhole Filmcity" [ref=e80] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e81]:
+            - link "Pinhole Media" [ref=e82] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=e83]:
+            - link "Pinhole Studio" [ref=e84] [cursor=pointer]:
+              - /url: /
+    - generic [ref=e85]:
+      - list [ref=e86]:
+        - listitem [ref=e87]:
+          - link "Booking T&C" [ref=e88] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=e89]:
+          - link "Events T&C" [ref=e90] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=e91]:
+          - link "Shoot / Production P&P" [ref=e92] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=e93]:
+          - link "Event P&P" [ref=e94] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=e95] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=e96]: Stock imagery is sample content until replaced with Pinhole's own photos.
+  - button "Open studio assistant" [ref=e98]
+  - link "Chat on WhatsApp" [ref=e102] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e108] [cursor=pointer]

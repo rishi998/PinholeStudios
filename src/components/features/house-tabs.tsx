@@ -3,6 +3,14 @@
 import { useState } from "react";
 
 import { StudioImage } from "@/components/studios/studio-image";
+import { studioPhotos } from "@/data/pinhole-media";
+
+const roomPhoto: Record<string, string> = {
+  bedroom: "/media/custom/studios/the-house-setup/02.jpg",
+  kitchen: "/media/custom/studios/the-house-setup/03.jpg",
+  "living-room": "/media/custom/studios/the-house-setup/04.jpg",
+  dining: "/media/custom/studios/the-house-setup/01.jpg",
+};
 
 export function HouseTabs({
   setups,
@@ -27,7 +35,7 @@ export function HouseTabs({
           </button>
         ))}
       </div>
-      <StudioImage swatch="from-amber-500 to-stone-900" label={current.name} className="h-56 rounded-3xl" />
+      <StudioImage swatch="from-amber-500 to-stone-900" src={roomPhoto[current.id] ?? studioPhotos["the-house-setup"]?.[0]?.src} label={current.name} className="h-56 rounded-3xl" />
       <p>{current.summary}</p>
       <p className="text-sm text-muted-foreground">Suits {current.productionTypes.join(", ")}.</p>
     </div>

@@ -9,11 +9,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "overflow-hidden bg-[linear-gradient(180deg,oklch(0.86_0.15_85),oklch(0.68_0.16_65))] text-[oklch(0.24_0.04_60)] shadow-[0_10px_40px_-10px_oklch(0.79_0.16_76/0.6),inset_0_1px_0_oklch(1_0_0/0.45)] before:pointer-events-none before:absolute before:inset-y-0 before:left-0 before:w-1/3 before:-translate-x-[220%] before:bg-white/40 before:transition-transform before:duration-500 [@media(hover:hover)]:hover:before:translate-x-[420%]",
+          "bg-[var(--ember)] text-[oklch(0.2_0.03_50)] [@media(hover:hover)]:hover:brightness-110",
         outline:
           "border-border bg-background hover:bg-muted aria-expanded:bg-muted",
         secondary:
-          "border-white/10 bg-white/5 text-foreground backdrop-blur-md [@media(hover:hover)]:hover:bg-white/10",
+          "border-border bg-card text-foreground [@media(hover:hover)]:hover:bg-muted",
         ghost:
           "hover:bg-muted aria-expanded:bg-muted",
         destructive:

@@ -64,15 +64,15 @@ export const workCategories = [
 ] as const;
 
 export const workItems = [
-  { id: "w1", title: "Sample event film", category: "Events", kind: "video" as const, vimeoId: "76979871", isSample: true as const },
-  { id: "w2", title: "Sample empty floor", category: "Empty Studio", kind: "photo" as const, isSample: true as const },
-  { id: "w3", title: "Sample chroma spot", category: "Green Screen", kind: "video" as const, vimeoId: "76979871", isSample: true as const },
-  { id: "w4", title: "Sample house scene", category: "House Setup", kind: "instagram" as const, isSample: true as const },
-  { id: "w5", title: "Sample cyc still", category: "Cyclorama", kind: "photo" as const, isSample: true as const },
-  { id: "w6", title: "Sample podcast", category: "Podcast", kind: "video" as const, vimeoId: "76979871", isSample: true as const },
-  { id: "w7", title: "Sample garden", category: "Garden", kind: "instagram" as const, isSample: true as const },
-  { id: "w8", title: "Sample lawn event", category: "Lawn", kind: "photo" as const, isSample: true as const },
-  { id: "w9", title: "Sample podcast still", category: "Podcast", kind: "photo" as const, isSample: true as const },
+  { id: "w1", title: "Studio showreel", category: "Events", kind: "video" as const, videoSrc: "/media/custom/homepage/showreel.mp4", isSample: false as const },
+  { id: "w2", title: "Empty studio floor", category: "Empty Studio", kind: "photo" as const, image: "/media/custom/studios/empty-studio/01.jpg", isSample: false as const },
+  { id: "w3", title: "Green screen", category: "Green Screen", kind: "photo" as const, image: "/media/custom/studios/green-screen-studio/01.jpg", isSample: false as const },
+  { id: "w4", title: "House setup", category: "House Setup", kind: "photo" as const, image: "/media/custom/studios/the-house-setup/01.jpg", isSample: false as const },
+  { id: "w5", title: "White cyclorama", category: "Cyclorama", kind: "photo" as const, image: "/media/custom/studios/white-cyclorama/01.jpg", isSample: false as const },
+  { id: "w6", title: "Podcast room", category: "Podcast", kind: "photo" as const, image: "/media/custom/studios/podcast-setup/01.png", isSample: false as const },
+  { id: "w7", title: "Garden", category: "Garden", kind: "photo" as const, image: "/media/custom/studios/garden-area/01.jpg", isSample: false as const },
+  { id: "w8", title: "Lawn", category: "Lawn", kind: "photo" as const, image: "/media/custom/studios/lawn-area/01.jpg", isSample: false as const },
+  { id: "w9", title: "Shoot still", category: "Events", kind: "photo" as const, image: "/media/custom/portfolio/01.jpg", isSample: false as const },
 ];
 
 export const addons = [

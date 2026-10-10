@@ -4,6 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 import { EnquirySuccess } from "@/components/enquiry/enquiry-success";
+import { clearReceipt, useReceipt, writeReceipt } from "@/lib/enquiry-receipt";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
@@ -14,14 +15,26 @@ import { submitEnquiry } from "@/lib/enquiries";
 export function ContactForm() {
   const pathname = usePathname();
   const [error, setError] = useState<string>();
-  const [href, setHref] = useState<string>();
   const [pending, setPending] = useState(false);
   const [started, setStarted] = useState(false);
+  const receiptKey = `contact:${pathname}`;
+  const saved = useReceipt(receiptKey);
 
-  if (href) return <EnquirySuccess href={href} />;
+  if (saved) {
+    return (
+      <EnquirySuccess
+        href={saved.href}
+        reference={saved.reference}
+        onDismiss={() => {
+          clearReceipt(receiptKey);
+        }}
+      />
+    );
+  }
 
   return (
     <form
+      method="post"
       className="grid gap-4"
       onFocus={() => {
         if (!started) {
@@ -31,23 +44,30 @@ export function ContactForm() {
       }}
       onSubmit={async (event) => {
         event.preventDefault();
+        if (pending) return;
         const data = new FormData(event.currentTarget);
         setPending(true);
-        const result = await submitEnquiry({
-          type: "contact",
-          name: String(data.get("name") ?? ""),
-          email: String(data.get("email") ?? ""),
-          phone: String(data.get("phone") ?? ""),
-          message: String(data.get("message") ?? ""),
-          sourcePage: pathname,
-          company: String(data.get("company") ?? ""),
-        });
-        setPending(false);
-        if (!result.ok) {
-          setError(result.error);
-          return;
+        setError(undefined);
+        try {
+          const result = await submitEnquiry({
+            type: "contact",
+            name: String(data.get("name") ?? ""),
+            email: String(data.get("email") ?? ""),
+            phone: String(data.get("phone") ?? ""),
+            message: String(data.get("message") ?? ""),
+            sourcePage: pathname,
+            company: String(data.get("company") ?? ""),
+          });
+          if (!result.ok) {
+            setError(result.error);
+            return;
+          }
+          writeReceipt(receiptKey, { href: result.href, reference: result.id });
+        } catch {
+          setError("Could not save that enquiry. You can still write on WhatsApp.");
+        } finally {
+          setPending(false);
         }
-        setHref(result.href);
       }}
     >
       <Field label="Name" htmlFor="contact-name" error={error}>
@@ -66,7 +86,7 @@ export function ContactForm() {
         <Textarea id="contact-message" name="message" required maxLength={1000} />
       </Field>
       <input name="company" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
-      <Button type="submit" loading={pending}>Submit</Button>
+      <Button type="submit" loading={pending} size="lg">Send enquiry</Button>
     </form>
   );
 }

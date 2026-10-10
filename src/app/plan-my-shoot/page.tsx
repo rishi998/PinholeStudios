@@ -6,8 +6,12 @@ export const metadata = { title: "Plan my shoot" };
 export default function PlanMyShootPage() {
   return (
     <>
-      <PageIntro title="Plan my shoot" lede="Five steps, then WhatsApp. A refresh keeps the draft on this device." />
-      <div className="mx-auto w-full max-w-3xl px-4 pb-16">
+      <PageIntro
+        eyebrow="Five steps"
+        title="Plan my shoot"
+        lede="Choose a room and a preferred date. The draft stays on this device. WhatsApp is how the studio confirms it."
+      />
+      <div className="mx-auto w-full max-w-3xl px-5 pt-8 pb-[var(--space-section)] md:px-8">
         <PlanWizard />
       </div>
     </>

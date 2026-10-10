@@ -1,47 +1,46 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
-import { SceneSlot } from "@/components/three/scene-slot";
 import { Button } from "@/components/ui/button";
-import { track } from "@/lib/analytics";
 
-export function RecceViewer({ title, url }: { title: string; url?: string }) {
-  const [open, setOpen] = useState(false);
+export function RecceViewer({ title, url }: { title: string; url: string }) {
+  const frame = useRef<HTMLIFrameElement>(null);
+  const [loaded, setLoaded] = useState(false);
 
   if (!url) {
     return (
-      <div className="grid gap-3">
-        <SceneSlot kind="room" className="h-[320px] overflow-hidden rounded-3xl border border-border" />
-        <p className="text-sm text-muted-foreground">Add NEXT_PUBLIC_RECCE_URL to replace this preview with the live 360 tour for {title}.</p>
+      <div className="grid min-h-64 place-items-center rounded-[var(--radius)] border border-border bg-card p-8 text-center">
+        <p>The 360 tour is not available just now.</p>
       </div>
     );
   }
 
   return (
-    <div className="grid gap-3">
-      <div className="relative aspect-video overflow-hidden rounded-3xl border border-border bg-[linear-gradient(160deg,#2a1c10,#102018)]">
-        {open ? (
-          <iframe className="size-full" src={url} title={`${title} 360 recce`} />
-        ) : (
-          <button
-            type="button"
-            className="grid size-full place-items-center text-white"
-            onClick={() => {
-              setOpen(true);
-              track("recce_click", { studio: title });
-            }}
-          >
-            Tap to explore
-          </button>
+    <div className="grid gap-4" data-lenis-prevent>
+      <div className="relative overflow-hidden rounded-[var(--radius)] border border-border bg-[oklch(0.16_0.012_50)]">
+        {loaded ? null : (
+          <p className="absolute inset-0 grid place-items-center px-6 text-center text-sm text-[oklch(0.92_0.01_85)]">
+            Loading the tour…
+          </p>
         )}
+        <iframe
+          ref={frame}
+          src={url}
+          title={`${title} 360 recce`}
+          className="h-[min(70vh,720px)] w-full"
+          allow="fullscreen; accelerometer; gyroscope; magnetometer; xr-spatial-tracking"
+          allowFullScreen
+          loading="lazy"
+          onLoad={() => setLoaded(true)}
+        />
       </div>
       <div className="flex flex-wrap gap-2">
-        <Button type="button" variant="secondary" onClick={() => document.querySelector("iframe")?.requestFullscreen()}>
+        <Button type="button" variant="secondary" onClick={() => frame.current?.requestFullscreen()}>
           Fullscreen
         </Button>
         <Button nativeButton={false} variant="outline" render={<a href={url} target="_blank" rel="noreferrer" />}>
-          Open in new tab
+          Open the tour
         </Button>
       </div>
     </div>

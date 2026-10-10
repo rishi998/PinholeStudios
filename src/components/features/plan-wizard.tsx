@@ -3,6 +3,7 @@
 import { useState, useSyncExternalStore } from "react";
 
 import { EnquirySuccess } from "@/components/enquiry/enquiry-success";
+import { clearReceipt, useReceipt, writeReceipt } from "@/lib/enquiry-receipt";
 import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
@@ -59,11 +60,22 @@ export function PlanWizard() {
     }
   }
   const setDraft = (next: Draft) => writeDraft(next);
-  const [href, setHref] = useState<string>();
+  const [pending, setPending] = useState(false);
   const [error, setError] = useState<string>();
   const [started, setStarted] = useState(false);
+  const saved = useReceipt("plan");
 
-  if (href) return <EnquirySuccess href={href} />;
+  if (saved) {
+    return (
+      <EnquirySuccess
+        href={saved.href}
+        reference={saved.reference}
+        onDismiss={() => {
+          clearReceipt("plan");
+        }}
+      />
+    );
+  }
 
   const mark = () => {
     if (!started) {
@@ -138,9 +150,12 @@ export function PlanWizard() {
       ) : null}
       {draft.step === 4 ? (
         <form
+          method="post"
           className="grid gap-3"
           onSubmit={async (event) => {
             event.preventDefault();
+            if (pending) return;
+            setPending(true);
             const data = new FormData(event.currentTarget);
             const suggested = draft.suggest ? suggestStudio(draft.shoot.toLowerCase().includes("podcast") ? "podcast" : "ad-film") : undefined;
             const names = draft.suggest ? suggested?.name ?? "Suggest one" : studios.filter((studio) => draft.slugs.includes(studio.slug)).map((studio) => studio.name).join(", ");
@@ -148,28 +163,38 @@ export function PlanWizard() {
               "Hi Pinhole Studio, I'd like to plan a shoot.",
               `Shoot: ${draft.shoot}`,
               `Studio: ${names}`,
-              `Date: ${draft.date} ${draft.slot}`,
+              `Preferred date: ${draft.date || "not chosen"} (${draft.slot})`,
+              "This date is a request. Please confirm whether it is free.",
               `Hours: ${draft.hours}`,
               `Crew: ${draft.crew}`,
               `Extras: ${draft.extras.join(", ") || "none"}`,
               `Notes: ${String(data.get("notes") ?? "")}`,
             ].join("\n");
-            const result = await submitEnquiry({
-              type: "plan",
-              name: String(data.get("name") ?? ""),
-              phone: String(data.get("phone") ?? ""),
-              email: String(data.get("email") ?? ""),
-              message,
-              sourcePage: "/plan-my-shoot",
-              company: String(data.get("company") ?? ""),
-            });
+            let result: Awaited<ReturnType<typeof submitEnquiry>>;
+            try {
+              result = await submitEnquiry({
+                type: "plan",
+                name: String(data.get("name") ?? ""),
+                phone: String(data.get("phone") ?? ""),
+                email: String(data.get("email") ?? ""),
+                message,
+                sourcePage: "/plan-my-shoot",
+                company: String(data.get("company") ?? ""),
+              });
+            } catch {
+              setError("Could not save that plan. You can still write on WhatsApp.");
+              setPending(false);
+              return;
+            }
             if (!result.ok) {
               setError(result.error);
+              setPending(false);
               return;
             }
             localStorage.removeItem(KEY);
             track("form_submit", { page: "/plan-my-shoot" });
-            setHref(result.href);
+            writeReceipt("plan", { href: result.href, reference: result.id });
+            setPending(false);
           }}
         >
           <div className="flex flex-wrap gap-2">
@@ -199,7 +224,7 @@ export function PlanWizard() {
           </Field>
           <input name="company" className="hidden" tabIndex={-1} autoComplete="off" />
           {error ? <p className="text-sm text-destructive">{error}</p> : null}
-          <Button type="submit">Send plan on WhatsApp</Button>
+          <Button type="submit" loading={pending}>Send plan on WhatsApp</Button>
         </form>
       ) : null}
       <div className="flex gap-2">

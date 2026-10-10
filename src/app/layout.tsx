@@ -4,7 +4,6 @@ import { Bricolage_Grotesque, Geist, Geist_Mono, Instrument_Serif } from "next/f
 import { ChatWidget } from "@/components/features/chat-widget";
 import { AmbientBackground } from "@/components/layout/ambient-background";
 import { AppToaster } from "@/components/layout/app-toaster";
-import { CursorFollower } from "@/components/layout/cursor-follower";
 import { SmoothScroll } from "@/components/layout/smooth-scroll";
 import { FloatingWhatsApp } from "@/components/layout/floating-whatsapp";
 import { Footer } from "@/components/layout/footer";
@@ -50,6 +49,7 @@ export const metadata: Metadata = {
     template: `%s · ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  icons: { icon: "/media/custom/branding/favicon.png" },
 };
 
 export const viewport: Viewport = {
@@ -95,7 +95,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </main>
           <Footer />
           <SmoothScroll />
-          <CursorFollower />
           <ChatWidget />
           <FloatingWhatsApp />
           <MobileActionBar />

@@ -7,8 +7,9 @@ import { z } from "zod";
 
 import { db } from "@/db";
 import { availability, bookingRequest, eventLog } from "@/db/schema";
+import { getStudio } from "@/data/studios";
+import { saveBookingRequest } from "@/lib/lead";
 import { getSession, requireAdmin } from "@/lib/session";
-import { waLink } from "@/lib/whatsapp";
 
 const requestSchema = z.object({
   studioSlug: z.string().min(1),
@@ -24,29 +25,20 @@ export async function requestBooking(input: z.infer<typeof requestSchema>) {
   const parsed = requestSchema.safeParse(input);
   if (!parsed.success || parsed.data.company) return { ok: false as const, error: "Check the booking details." };
   const session = await getSession();
-  const message = [
-    "Hi Pinhole Studio, I'd like to request a booking.",
-    `Studio: ${parsed.data.studioSlug}`,
-    `Date: ${parsed.data.date}`,
-    `Slot: ${parsed.data.slot}`,
-    `Name: ${parsed.data.name}`,
-    `Phone: ${parsed.data.phone}`,
-    "You'll get confirmation on WhatsApp. No online payment needed.",
-  ].join("\n");
-  await db.insert(bookingRequest).values({
-    id: randomUUID(),
-    ...parsed.data,
-    email: parsed.data.email || null,
-    message,
-    userId: session?.user.id,
-  });
-  await db.insert(eventLog).values({
-    id: randomUUID(),
-    name: "booking_request",
-    page: `/studios/${parsed.data.studioSlug}`,
-    studio: parsed.data.studioSlug,
-  });
-  return { ok: true as const, href: waLink(message) };
+  const studioName = getStudio(parsed.data.studioSlug)?.name ?? parsed.data.studioSlug;
+  const saved = await saveBookingRequest({ ...parsed.data, studioName, userId: session?.user.id });
+  if (!saved.ok) return saved;
+  try {
+    await db.insert(eventLog).values({
+      id: randomUUID(),
+      name: "booking_request",
+      page: `/studios/${parsed.data.studioSlug}`,
+      studio: parsed.data.studioSlug,
+    });
+  } catch {
+    // The booking request is already stored.
+  }
+  return saved;
 }
 
 export async function setBookingStatus(id: string, status: "approved" | "declined") {

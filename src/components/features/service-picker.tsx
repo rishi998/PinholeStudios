@@ -1,40 +1,77 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { studioPhotos } from "@/data/pinhole-media";
 import { services } from "@/data/services";
+import { getStudio } from "@/data/studios";
+import { cn } from "cn";
+
+const audiences = [...new Set(services.map((service) => service.audience))];
 
 export function ServicePicker() {
   const [audience, setAudience] = useState<string>("");
   const matches = audience ? services.filter((service) => service.audience === audience) : services;
 
   return (
-    <div className="grid gap-4">
-      <div className="flex flex-wrap gap-2">
-        <button type="button" className={`h-11 rounded-full px-4 text-sm ${audience === "" ? "bg-primary text-primary-foreground" : "border border-border"}`} onClick={() => setAudience("")}>
+    <div>
+      <div className="flex gap-2 overflow-x-auto pb-2">
+        <button
+          type="button"
+          className={cn(
+            "h-11 shrink-0 rounded-full border px-4 text-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+            audience === "" ? "border-transparent bg-[var(--ember)] text-[oklch(0.2_0.03_50)]" : "border-border"
+          )}
+          onClick={() => setAudience("")}
+        >
           All
         </button>
-        {services.map((service) => (
+        {audiences.map((item) => (
           <button
-            key={service.slug}
+            key={item}
             type="button"
-            className={`h-11 rounded-full px-4 text-sm ${audience === service.audience ? "bg-primary text-primary-foreground" : "border border-border"}`}
-            onClick={() => setAudience(service.audience)}
+            aria-pressed={audience === item}
+            className={cn(
+              "h-11 shrink-0 rounded-full border px-4 text-sm focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+              audience === item ? "border-transparent bg-[var(--ember)] text-[oklch(0.2_0.03_50)]" : "border-border"
+            )}
+            onClick={() => setAudience(item)}
           >
-            I am {service.audience.toLowerCase()}
+            {item}
           </button>
         ))}
       </div>
-      <ul className="grid gap-3">
-        {matches.map((service) => (
-          <li key={service.slug}>
-            <Link href={`/services/${service.slug}`} className="block rounded-3xl border border-border bg-card/70 p-5">
-              <span className="font-display text-xl">{service.name}</span>
-              <span className="mt-1 block text-sm text-muted-foreground">{service.summary}</span>
-            </Link>
-          </li>
-        ))}
+      <ul className="mt-8 border-t border-border">
+        {matches.map((service) => {
+          const studio = getStudio(service.studios[0] ?? "");
+          const photo = studio ? studioPhotos[studio.slug]?.[0] : undefined;
+          return (
+            <li key={service.slug} className="grid items-center gap-6 border-b border-border py-8 md:grid-cols-12">
+              <Link href={`/services/${service.slug}`} className="md:col-span-5">
+                {photo ? (
+                  <span className="relative block aspect-[4/3] overflow-hidden rounded-[var(--radius)]">
+                    <Image src={photo.src} alt={photo.alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 28rem" />
+                  </span>
+                ) : null}
+              </Link>
+              <div className="md:col-span-7">
+                <h2 className="font-display text-3xl tracking-[-0.03em]">
+                  <Link href={`/services/${service.slug}`} className="underline-offset-4 hover:underline">
+                    {service.name}
+                  </Link>
+                </h2>
+                <p className="mt-3 max-w-[46ch] text-muted-foreground">{service.description}</p>
+                <p className="mt-4 text-sm">
+                  <Link href={`/services/${service.slug}`} className="underline-offset-4 hover:underline">
+                    See the rooms
+                  </Link>
+                </p>
+              </div>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

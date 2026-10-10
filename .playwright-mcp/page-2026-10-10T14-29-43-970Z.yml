@@ -1,0 +1,96 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f4e3]:
+    - generic [ref=f4e5]:
+      - link [ref=f4e6] [cursor=pointer]:
+        - /url: /
+        - img "Pinhole Studio" [ref=f4e7]
+      - generic [ref=f4e8]:
+        - 'button "Theme: dark. Switch to system" [ref=f4e9]'
+        - button "Account" [ref=f4e10]
+        - button "Open menu" [ref=f4e277]
+  - main [ref=f4e16]:
+    - generic [ref=f4e284]:
+      - heading "Plan my shoot" [level=1] [ref=f4e285]
+      - paragraph [ref=f4e286]: Five steps, then WhatsApp. A refresh keeps the draft on this device.
+    - generic [ref=f4e288]:
+      - paragraph [ref=f4e289]: Step 1 of 5
+      - generic [ref=f4e292]:
+        - button "Ad film" [ref=f4e293]
+        - button "Podcast" [ref=f4e294]
+        - button "Product shoot" [ref=f4e295]
+        - button "Interview" [ref=f4e296]
+        - button "Music video" [ref=f4e297]
+        - button "Event" [ref=f4e298]
+        - button "Short film" [ref=f4e299]
+        - button "Reels/Content" [ref=f4e300]
+        - button "Workshop" [ref=f4e301]
+        - button "Other" [ref=f4e302]
+      - generic [ref=f4e303]:
+        - button "Back" [disabled]
+        - button "Next" [disabled]
+  - contentinfo [ref=f4e192]:
+    - generic [ref=f4e193]:
+      - generic [ref=f4e194]:
+        - link [ref=f4e195] [cursor=pointer]:
+          - /url: /
+          - img "Pinhole Studio" [ref=f4e196]
+        - paragraph [ref=f4e197]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=f4e198] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=f4e199]:
+        - paragraph [ref=f4e200]: Contact
+        - list [ref=f4e201]:
+          - listitem [ref=f4e202]:
+            - link "+91 85069 05757" [ref=f4e203] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=f4e204]:
+            - link "+91 99997 63457" [ref=f4e205] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=f4e206]:
+            - link "+91 98186 37485" [ref=f4e207] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=f4e208]:
+            - link "pinholestudioz@gmail.com" [ref=f4e209] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=f4e210]:
+        - paragraph [ref=f4e211]: Brand
+        - list [ref=f4e212]:
+          - listitem [ref=f4e213]:
+            - link "Pinhole Filmcity" [ref=f4e214] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=f4e215]:
+            - link "Pinhole Media" [ref=f4e216] [cursor=pointer]:
+              - /url: /#coming-soon
+          - listitem [ref=f4e217]:
+            - link "Pinhole Studio" [ref=f4e218] [cursor=pointer]:
+              - /url: /
+    - generic [ref=f4e219]:
+      - list [ref=f4e220]:
+        - listitem [ref=f4e221]:
+          - link "Booking T&C" [ref=f4e222] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=f4e223]:
+          - link "Events T&C" [ref=f4e224] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=f4e225]:
+          - link "Shoot / Production P&P" [ref=f4e226] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=f4e227]:
+          - link "Event P&P" [ref=f4e228] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=f4e229] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=f4e230]: Photos are from Pinhole Studio. Rates and some stories stay marked sample until the studio confirms them.
+  - generic [ref=f4e279]:
+    - link "Call" [ref=f4e280] [cursor=pointer]:
+      - /url: tel:+918506905757
+    - link "Chat on WhatsApp" [ref=f4e281] [cursor=pointer]:
+      - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+      - text: WhatsApp
+    - link "Enquire" [ref=f4e282] [cursor=pointer]:
+      - /url: /plan-my-shoot
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f4e251] [cursor=pointer]
+  - alert [ref=f4e249]: Plan my shoot

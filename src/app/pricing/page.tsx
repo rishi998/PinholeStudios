@@ -7,38 +7,68 @@ import { siteConfig } from "@/lib/site.config";
 
 export const metadata = { title: "Pricing" };
 
+function hourly(studio: (typeof studios)[number]) {
+  return siteConfig.pricing.mode === "range"
+    ? `${formatInr(studio.pricing.rangeHourly[0])}–${formatInr(studio.pricing.rangeHourly[1])}`
+    : formatInr(studio.pricing.hourly);
+}
+
 export default function PricingPage() {
   return (
     <>
-      <PageIntro title="Pricing" lede="Sample rates until the studio confirms official numbers. The final quote is confirmed on WhatsApp." />
-      <div className="mx-auto grid w-full max-w-6xl gap-4 px-4 pb-16">
-        <QuoteDrawer />
-        <div className="overflow-x-auto rounded-3xl border border-border">
-          <table className="w-full min-w-[640px] text-left text-sm">
-            <thead className="bg-card">
-              <tr>
-                <th className="p-3">Studio</th>
-                <th className="p-3">Hourly</th>
-                <th className="p-3">Half day</th>
-                <th className="p-3">Full day</th>
+      <PageIntro
+        eyebrow="Rates"
+        title="Pricing"
+        lede="These amounts are sample figures for each room. They are not a confirmed price, and they are not guaranteed for every studio. The quote the studio sends is the one that holds."
+      />
+      <div className="mx-auto w-full max-w-[var(--page-width)] px-5 pt-8 pb-[var(--space-section)] md:px-8">
+        <p className="flex items-center gap-3 font-mono text-[0.72rem] tracking-[0.18em] text-muted-foreground uppercase">
+          Illustrative rate card
+          <SampleBadge />
+        </p>
+        <ul className="mt-6 border-t border-border md:hidden">
+          {studios.map((studio) => (
+            <li key={studio.slug} className="border-b border-border py-5">
+              <p className="font-display text-2xl tracking-[-0.03em]">{studio.name}</p>
+              <dl className="mt-3 grid grid-cols-3 gap-3 text-sm">
+                <div>
+                  <dt className="text-muted-foreground">Hourly</dt>
+                  <dd className="mt-1 font-mono tabular-nums">{hourly(studio)}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted-foreground">Half day</dt>
+                  <dd className="mt-1 font-mono tabular-nums">{formatInr(studio.pricing.halfDay)}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted-foreground">Full day</dt>
+                  <dd className="mt-1 font-mono tabular-nums">{formatInr(studio.pricing.fullDay)}</dd>
+                </div>
+              </dl>
+            </li>
+          ))}
+        </ul>
+        <table className="mt-8 hidden w-full text-left text-sm md:table">
+          <thead>
+            <tr className="border-b border-border text-muted-foreground">
+              <th className="py-3 font-medium">Studio</th>
+              <th className="py-3 font-medium">Hourly</th>
+              <th className="py-3 font-medium">Half day</th>
+              <th className="py-3 font-medium">Full day</th>
+            </tr>
+          </thead>
+          <tbody>
+            {studios.map((studio) => (
+              <tr key={studio.slug} className="border-b border-border">
+                <td className="py-4 font-display text-xl tracking-[-0.03em]">{studio.name}</td>
+                <td className="py-4 font-mono tabular-nums">{hourly(studio)}</td>
+                <td className="py-4 font-mono tabular-nums">{formatInr(studio.pricing.halfDay)}</td>
+                <td className="py-4 font-mono tabular-nums">{formatInr(studio.pricing.fullDay)}</td>
               </tr>
-            </thead>
-            <tbody>
-              {studios.map((studio) => (
-                <tr key={studio.slug} className="border-t border-border">
-                  <td className="p-3">{studio.name}</td>
-                  <td className="p-3">{siteConfig.pricing.mode === "range" ? `${formatInr(studio.pricing.rangeHourly[0])}–${formatInr(studio.pricing.rangeHourly[1])}` : formatInr(studio.pricing.hourly)}</td>
-                  <td className="p-3">{formatInr(studio.pricing.halfDay)}</td>
-                  <td className="p-3">
-                    <span className="inline-flex items-center gap-2">
-                      {formatInr(studio.pricing.fullDay)}
-                      <SampleBadge />
-                    </span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+            ))}
+          </tbody>
+        </table>
+        <div className="mt-8">
+          <QuoteDrawer triggerVariant="default" />
         </div>
       </div>
     </>

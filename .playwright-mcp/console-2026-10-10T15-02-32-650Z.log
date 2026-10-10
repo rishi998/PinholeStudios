@@ -1,0 +1,97 @@
+[    1191ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    1300ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    1533ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    2354ms] [LOG] [Fast Refresh] done in 934ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    2622ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    2682ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    4064ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    4102ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    5126ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/empty-studio:24
+[    5229ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    5286ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    6360ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/green-screen-studio:24
+[    6738ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    6869ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    8327ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/the-house-setup:24
+[    8479ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    8530ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    8741ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    8907ms] [LOG] [Fast Refresh] done in 280ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    9704ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/white-cyclorama:24
+[    9871ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    9923ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   10678ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/podcast-setup:24
+[   10930ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   11195ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   11910ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/garden-area:24
+[   12325ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   12381ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   12838ms] [WARNING] [Meta pixel] 876810729805531 is unavailable on this website due to it's traffic permission settings. Go to https://www.facebook.com/business/help/572690630080597 to learn more. @ https://storage.googleapis.com/bigdatahomes/frontend-static/vendors~2.7df4f64c5b86cc63.js:23
+[   13249ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/lawn-area:24
+[   13356ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   13411ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   13888ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   13911ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   14447ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   14498ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   15244ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   15285ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   15733ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   15766ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16186ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/recce:24
+[   16264ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16302ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16878ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   16955ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   17925ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   18115ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   18491ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   18567ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19049ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19100ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19547ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   19571ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   20083ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/empty-studio:24
+[   20217ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   20253ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   20679ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/green-screen-studio:24
+[   20782ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   20820ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   21351ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/the-house-setup:24
+[   21421ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   21463ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   22184ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/white-cyclorama:24
+[   22376ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   22411ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   22872ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/podcast-setup:24
+[   22974ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   23026ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   23398ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/garden-area:24
+[   23515ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   23557ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   23957ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/studios/lawn-area:24
+[   24080ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   24168ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   24468ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   24521ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   24861ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   24970ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   25248ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   25348ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   25648ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   25693ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   25944ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ http://localhost:3000/recce:24
+[   26002ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   26052ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   26456ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   26565ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   26910ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   27000ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   27402ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   27436ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   27954ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   28119ms] [LOG] [Fast Refresh] done in 391ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   29007ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   29036ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   29446ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   29569ms] [LOG] [Fast Refresh] done in 227ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776

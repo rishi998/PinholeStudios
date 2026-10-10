@@ -1,6 +1,5 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { usePathname } from "next/navigation";
 import { useLayoutEffect } from "react";
 
@@ -8,8 +7,7 @@ import { toneFor } from "@/lib/page-tones";
 
 export function AmbientBackground() {
   const pathname = usePathname();
-  const { resolvedTheme } = useTheme();
-  const tone = toneFor(pathname, resolvedTheme === "dark");
+  const tone = toneFor(pathname);
 
   useLayoutEffect(() => {
     const root = document.documentElement;

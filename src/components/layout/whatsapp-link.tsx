@@ -17,6 +17,7 @@ export function WhatsAppLink({
   iconOnly = false,
   size = "default",
   message,
+  variant = "whatsapp",
 }: {
   placement: string
   className?: string
@@ -24,6 +25,7 @@ export function WhatsAppLink({
   iconOnly?: boolean
   size?: "default" | "lg" | "icon" | "sm"
   message?: string
+  variant?: "whatsapp" | "outline"
 }) {
   const pathname = usePathname()
   const studio = pathname.startsWith("/studios/")
@@ -36,7 +38,7 @@ export function WhatsAppLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={cn(buttonVariants({ variant: "whatsapp", size: iconOnly ? "icon" : size }), className)}
+      className={cn(buttonVariants({ variant, size: iconOnly ? "icon" : size }), className)}
       aria-label="Chat on WhatsApp"
       onClick={() => track("whatsapp_click", { page: pathname, studio, placement })}
     >
