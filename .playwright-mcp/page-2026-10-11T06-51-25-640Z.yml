@@ -1,0 +1,166 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "Pinhole Studio" [ref=e8]
+      - navigation "Primary" [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "360° Recce" [ref=e11] [cursor=pointer]:
+          - /url: /recce
+        - link "Work" [ref=e12] [cursor=pointer]:
+          - /url: /work
+        - button "Studios" [ref=e14]
+        - button "Services" [ref=e16]
+        - link "About" [ref=e17] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - button "Plan my shoot" [ref=e20] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=e21] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - button "Account" [ref=e22]
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - paragraph [ref=e25]: What the lot is for
+      - heading "Services" [level=1] [ref=e26]
+      - paragraph [ref=e27]: Production space matched to the kind of project you are making.
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - button "All" [ref=e31]
+        - button "A production house" [ref=e32]
+        - button "Planning an event" [ref=e33]
+        - button "Running a workshop" [ref=e34]
+        - button "A creator" [ref=e35]
+        - button "An agency" [ref=e36]
+      - list [ref=e37]:
+        - listitem [ref=e38]:
+          - link [ref=e39] [cursor=pointer]:
+            - /url: /services/film-commercial-production
+            - img "Empty studio floor at Pinhole Studio" [ref=e41]
+          - generic [ref=e42]:
+            - heading [level=2] [ref=e43]:
+              - link "Film & Commercial Production" [ref=e44] [cursor=pointer]:
+                - /url: /services/film-commercial-production
+            - paragraph [ref=e45]: Studios and indoor/outdoor locations for ad films, documentaries, short films, TVC/DVC and OTT production.
+            - paragraph [ref=e46]:
+              - link "See the rooms" [ref=e47] [cursor=pointer]:
+                - /url: /services/film-commercial-production
+        - listitem [ref=e48]:
+          - link [ref=e49] [cursor=pointer]:
+            - /url: /services/event-corporate-space
+            - img "Lawn area" [ref=e51]
+          - generic [ref=e52]:
+            - heading [level=2] [ref=e53]:
+              - link "Event & Corporate Production Space" [ref=e54] [cursor=pointer]:
+                - /url: /services/event-corporate-space
+            - paragraph [ref=e55]: Event-ready indoor floors and outdoor lawn and garden areas for corporate production and gatherings.
+            - paragraph [ref=e56]:
+              - link "See the rooms" [ref=e57] [cursor=pointer]:
+                - /url: /services/event-corporate-space
+        - listitem [ref=e58]:
+          - link [ref=e59] [cursor=pointer]:
+            - /url: /services/education-seminar-workshop
+            - img "Podcast setup" [ref=e61]
+          - generic [ref=e62]:
+            - heading [level=2] [ref=e63]:
+              - link "Education, Seminar & Workshop Space" [ref=e64] [cursor=pointer]:
+                - /url: /services/education-seminar-workshop
+            - paragraph [ref=e65]: Spaces for seminars, workshops and training videos, with indoor rooms and the outdoor lawn.
+            - paragraph [ref=e66]:
+              - link "See the rooms" [ref=e67] [cursor=pointer]:
+                - /url: /services/education-seminar-workshop
+        - listitem [ref=e68]:
+          - link [ref=e69] [cursor=pointer]:
+            - /url: /services/creator-influencer-studio
+            - img "Podcast setup" [ref=e71]
+          - generic [ref=e72]:
+            - heading [level=2] [ref=e73]:
+              - link "Content Creator & Influencer Studio" [ref=e74] [cursor=pointer]:
+                - /url: /services/creator-influencer-studio
+            - paragraph [ref=e75]: Podcast, house and chroma setups for YouTube, Reels and influencer content.
+            - paragraph [ref=e76]:
+              - link "See the rooms" [ref=e77] [cursor=pointer]:
+                - /url: /services/creator-influencer-studio
+        - listitem [ref=e78]:
+          - link [ref=e79] [cursor=pointer]:
+            - /url: /services/agency-production-support
+            - img "Empty studio floor at Pinhole Studio" [ref=e81]
+          - generic [ref=e82]:
+            - heading [level=2] [ref=e83]:
+              - link "Agency & Production House Support" [ref=e84] [cursor=pointer]:
+                - /url: /services/agency-production-support
+            - paragraph [ref=e85]: Floor space, cyclorama and crew support for agencies and production houses.
+            - paragraph [ref=e86]:
+              - link "See the rooms" [ref=e87] [cursor=pointer]:
+                - /url: /services/agency-production-support
+  - contentinfo [ref=e88]:
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - link [ref=e91] [cursor=pointer]:
+          - /url: /
+          - img "Pinhole Studio" [ref=e92]
+        - paragraph [ref=e93]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=e94] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=e95]:
+        - paragraph [ref=e96]: Contact
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "+91 85069 05757" [ref=e99] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=e100]:
+            - link "+91 99997 63457" [ref=e101] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=e102]:
+            - link "+91 98186 37485" [ref=e103] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=e104]:
+            - link "pinholestudioz@gmail.com" [ref=e105] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=e106]:
+        - paragraph [ref=e107]: Visit
+        - list [ref=e108]:
+          - listitem [ref=e109]:
+            - link "About" [ref=e110] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e111]:
+            - link "Studios" [ref=e112] [cursor=pointer]:
+              - /url: /studios
+          - listitem [ref=e113]:
+            - link "Work" [ref=e114] [cursor=pointer]:
+              - /url: /work
+          - listitem [ref=e115]:
+            - link "Pricing" [ref=e116] [cursor=pointer]:
+              - /url: /pricing
+    - generic [ref=e117]:
+      - list [ref=e118]:
+        - listitem [ref=e119]:
+          - link "Booking T&C" [ref=e120] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=e121]:
+          - link "Events T&C" [ref=e122] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=e123]:
+          - link "Shoot / Production P&P" [ref=e124] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=e125]:
+          - link "Event P&P" [ref=e126] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=e127] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=e128]: Photos are from Pinhole Studio. Rates and some stories stay marked sample until the studio confirms them.
+  - button "Open studio assistant" [ref=e130]
+  - link "Chat on WhatsApp" [ref=e132] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e138] [cursor=pointer]:
+    - generic [ref=e141]:
+      - text: Compiling
+      - generic [ref=e142]:
+        - generic [ref=e143]: .
+        - generic [ref=e144]: .
+        - generic [ref=e145]: .

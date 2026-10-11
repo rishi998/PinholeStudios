@@ -159,6 +159,139 @@
   }
 }
 
+.pinhole-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html[data-pinhole-intro="skip"] .pinhole-intro {
+  display: none;
+}
+
+html.pinhole-intro-lock,
+html.pinhole-intro-lock body {
+  overflow: hidden;
+}
+
+.pinhole-word {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(3.4rem, 13vw, 7.5rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+}
+
+.pinhole-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(16px);
+  filter: blur(8px);
+}
+
+.pinhole-line {
+  display: block;
+  height: 1px;
+  margin-top: 1.25rem;
+  background: var(--ember);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.pinhole-caption {
+  margin-top: 1rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.pinhole-skip {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  min-height: 2.75rem;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.pinhole-skip:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pinhole-char {
+    animation: pinhole-char 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(280ms + (var(--i) * 72ms));
+  }
+
+  .pinhole-line {
+    animation: pinhole-line 0.45s cubic-bezier(0.22, 1, 0.36, 1) 1.5s forwards;
+  }
+
+  .pinhole-caption {
+    animation: pinhole-caption 0.5s cubic-bezier(0.22, 1, 0.36, 1) 1.62s forwards;
+  }
+
+  .pinhole-intro {
+    animation: pinhole-curtain 0.62s cubic-bezier(0.22, 1, 0.36, 1) 2.15s forwards;
+  }
+}
+
+@keyframes pinhole-char {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes pinhole-line {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes pinhole-caption {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pinhole-curtain {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pinhole-char,
+  .pinhole-caption {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .pinhole-line {
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

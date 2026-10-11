@@ -30,9 +30,9 @@ import { cn } from "cn"
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/work", label: "Work" },
   { href: "/recce", label: "360° Recce" },
+  { href: "/work", label: "Work" },
+  { href: "/about", label: "About" },
 ]
 
 function isCurrent(pathname: string, href: string) {
@@ -110,8 +110,11 @@ export function Header() {
             <NavLink href="/" current={isCurrent(pathname, "/")}>
               Home
             </NavLink>
-            <NavLink href="/about" current={isCurrent(pathname, "/about")}>
-              About
+            <NavLink href="/recce" current={isCurrent(pathname, "/recce")}>
+              360° Recce
+            </NavLink>
+            <NavLink href="/work" current={isCurrent(pathname, "/work")}>
+              Work
             </NavLink>
             <MegaMenu
               label="Studios"
@@ -161,11 +164,9 @@ export function Header() {
                 ))}
               </ul>
             </MegaMenu>
-            {links.slice(2).map((link) => (
-              <NavLink key={link.href} href={link.href} current={isCurrent(pathname, link.href)}>
-                {link.label}
-              </NavLink>
-            ))}
+            <NavLink href="/about" current={isCurrent(pathname, "/about")}>
+              About
+            </NavLink>
           </nav>
           <div className="ml-auto flex shrink-0 items-center gap-3">
             <div className="hidden items-center gap-3 lg:flex">
@@ -232,7 +233,7 @@ export function Header() {
               </Button>
             </div>
             <nav className="min-h-0 flex-1 overflow-y-auto px-4" aria-label="Mobile">
-              {links.slice(0, 2).map((link, index) => (
+              {links.slice(0, 3).map((link, index) => (
                 <motion.div
                   key={link.href}
                   initial={{ opacity: 0, y: 8 }}
@@ -282,7 +283,7 @@ export function Header() {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-              {links.slice(2).map((link) => (
+              {links.slice(3).map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}

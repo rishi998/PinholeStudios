@@ -67,6 +67,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <body className="flex min-h-dvh flex-col overflow-x-clip bg-background text-foreground">
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.dataset.pinholeMotion='reduce';var q=new URLSearchParams(location.search);if(q.get('intro')==='1')return;if(sessionStorage.getItem('pinhole-intro-seen')==='1')document.documentElement.dataset.pinholeIntro='skip';}catch(e){}})();",
+          }}
+        />
         <AmbientBackground />
         <script
           type="application/ld+json"

@@ -1,0 +1,157 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "Pinhole Studio" [ref=e8]
+      - navigation "Primary" [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "360° Recce" [ref=e11] [cursor=pointer]:
+          - /url: /recce
+        - link "Work" [ref=e12] [cursor=pointer]:
+          - /url: /work
+        - button "Studios" [ref=e14]
+        - button "Services" [ref=e16]
+        - link "About" [ref=e17] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - button "Plan my shoot" [ref=e20] [cursor=pointer]
+          - link "Chat on WhatsApp" [ref=e21] [cursor=pointer]:
+            - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+        - button "Account" [ref=e22]
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - paragraph [ref=e25]: Seven rooms
+      - heading "Studios" [level=1] [ref=e26]
+      - paragraph [ref=e27]: Seven ready-to-use locations for shoots, content and events.
+    - generic [ref=e29]:
+      - heading [level=2] [ref=e30]:
+        - text: Which studio do I
+        - emphasis [ref=e31]: need
+        - text: "?"
+      - paragraph [ref=e32]: I'm shooting a…
+      - generic [ref=e33]:
+        - button "Podcast" [ref=e34]
+        - button "Ad film" [ref=e35]
+        - button "Product" [ref=e36]
+        - button "Interview" [ref=e37]
+        - button "Event" [ref=e38]
+        - button "Music video" [ref=e39]
+        - button "Workshop" [ref=e40]
+        - button "Reels" [ref=e41]
+      - generic [ref=e42]:
+        - button "AC" [ref=e43]
+        - button "Indoor" [ref=e44]
+        - button "Outdoor" [ref=e45]
+        - button "Green screen" [ref=e46]
+        - button "Cyclorama" [ref=e47]
+        - button "Parking" [ref=e48]
+        - button "Sound-treated" [ref=e49]
+      - generic [ref=e50]:
+        - article [ref=e51]:
+          - link "Empty studio floor at Pinhole Studio Empty Studio Space Large blank production floor" [ref=e52] [cursor=pointer]:
+            - /url: /studios/empty-studio
+            - img "Empty studio floor at Pinhole Studio" [ref=e54]
+            - generic [ref=e55]: Empty Studio Space
+            - generic [ref=e57]: Large blank production floor
+        - article [ref=e58]:
+          - link "Green screen studio Green Screen Studio Chroma key" [ref=e59] [cursor=pointer]:
+            - /url: /studios/green-screen-studio
+            - img "Green screen studio" [ref=e61]
+            - generic [ref=e62]: Green Screen Studio
+            - generic [ref=e64]: Chroma key
+        - article [ref=e65]:
+          - link "House setup at Pinhole Studio The House Setup Bedroom, living room, kitchen and dining environments" [ref=e66] [cursor=pointer]:
+            - /url: /studios/the-house-setup
+            - img "House setup at Pinhole Studio" [ref=e68]
+            - generic [ref=e69]: The House Setup
+            - generic [ref=e71]: Bedroom, living room, kitchen and dining environments
+        - article [ref=e72]:
+          - link "White cyclorama White Cyclorama Setup Seamless white cyc" [ref=e73] [cursor=pointer]:
+            - /url: /studios/white-cyclorama
+            - img "White cyclorama" [ref=e75]
+            - generic [ref=e76]: White Cyclorama Setup
+            - generic [ref=e78]: Seamless white cyc
+        - article [ref=e79]:
+          - link "Podcast setup Podcast Setup Podcast and interview space" [ref=e80] [cursor=pointer]:
+            - /url: /studios/podcast-setup
+            - img "Podcast setup" [ref=e82]
+            - generic [ref=e83]: Podcast Setup
+            - generic [ref=e85]: Podcast and interview space
+        - article [ref=e86]:
+          - link "Garden area Garden Area Outdoor" [ref=e87] [cursor=pointer]:
+            - /url: /studios/garden-area
+            - img "Garden area" [ref=e89]
+            - generic [ref=e90]: Garden Area
+            - generic [ref=e92]: Outdoor
+        - article [ref=e93]:
+          - link "Lawn area Lawn Area Outdoor" [ref=e94] [cursor=pointer]:
+            - /url: /studios/lawn-area
+            - img "Lawn area" [ref=e96]
+            - generic [ref=e97]: Lawn Area
+            - generic [ref=e99]: Outdoor
+  - contentinfo [ref=e100]:
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - link [ref=e103] [cursor=pointer]:
+          - /url: /
+          - img "Pinhole Studio" [ref=e104]
+        - paragraph [ref=e105]: Pinhole Studio Farm 57, Kapashera Estate, New Delhi, Delhi, 110097
+        - link "Get directions" [ref=e106] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=Pinhole%20Studio%20Farm%2057%20Kapashera%20Estate%20New%20Delhi
+      - generic [ref=e107]:
+        - paragraph [ref=e108]: Contact
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - link "+91 85069 05757" [ref=e111] [cursor=pointer]:
+              - /url: tel:+918506905757
+          - listitem [ref=e112]:
+            - link "+91 99997 63457" [ref=e113] [cursor=pointer]:
+              - /url: tel:+919999763457
+          - listitem [ref=e114]:
+            - link "+91 98186 37485" [ref=e115] [cursor=pointer]:
+              - /url: tel:+919818637485
+          - listitem [ref=e116]:
+            - link "pinholestudioz@gmail.com" [ref=e117] [cursor=pointer]:
+              - /url: mailto:pinholestudioz@gmail.com
+      - generic [ref=e118]:
+        - paragraph [ref=e119]: Visit
+        - list [ref=e120]:
+          - listitem [ref=e121]:
+            - link "About" [ref=e122] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e123]:
+            - link "Studios" [ref=e124] [cursor=pointer]:
+              - /url: /studios
+          - listitem [ref=e125]:
+            - link "Work" [ref=e126] [cursor=pointer]:
+              - /url: /work
+          - listitem [ref=e127]:
+            - link "Pricing" [ref=e128] [cursor=pointer]:
+              - /url: /pricing
+    - generic [ref=e129]:
+      - list [ref=e130]:
+        - listitem [ref=e131]:
+          - link "Booking T&C" [ref=e132] [cursor=pointer]:
+            - /url: /policies/booking-terms
+        - listitem [ref=e133]:
+          - link "Events T&C" [ref=e134] [cursor=pointer]:
+            - /url: /policies/events-terms
+        - listitem [ref=e135]:
+          - link "Shoot / Production P&P" [ref=e136] [cursor=pointer]:
+            - /url: /policies/shoot-production-policy
+        - listitem [ref=e137]:
+          - link "Event P&P" [ref=e138] [cursor=pointer]:
+            - /url: /policies/event-policy
+      - link "Chat on WhatsApp" [ref=e139] [cursor=pointer]:
+        - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+    - paragraph [ref=e140]: Photos are from Pinhole Studio. Rates and some stories stay marked sample until the studio confirms them.
+  - button "Open studio assistant" [ref=e142]
+  - link "Chat on WhatsApp" [ref=e144] [cursor=pointer]:
+    - /url: https://wa.me/918506905757?text=Hi%20Pinhole%20Studio%2C%20I'd%20like%20to%20know%20more%20about%20your%20studios.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e150] [cursor=pointer]
