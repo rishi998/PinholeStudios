@@ -257,9 +257,17 @@
 }
 
 .rate-stage {
-  display: grid;
+  display: flex;
   height: calc(100svh - 5rem);
-  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .rate-stage {
+    justify-content: flex-start;
+    padding-top: 0.75rem;
+  }
 }
 
 .rate-card {

@@ -172,7 +172,7 @@ export function RateParade() {
 
   return (
     <section className="py-[var(--space-section)]" aria-label="Full-day rates">
-      <div className="mx-auto w-full max-w-[var(--page-width)] px-5 md:px-8">
+      <div className="rate-intro mx-auto hidden w-full max-w-[var(--page-width)] px-5 md:block md:px-8">
         <p className="flex items-center gap-3 font-mono text-[0.72rem] tracking-[0.18em] text-muted-foreground uppercase">
           Full-day rates
           <SampleBadge />
@@ -186,6 +186,18 @@ export function RateParade() {
       </div>
       <div ref={wrapRef} className="rate-pin">
         <div className="rate-stage bg-background">
+          <div className="rate-stage-intro px-5 pb-4 md:hidden">
+            <p className="flex items-center gap-3 font-mono text-[0.72rem] tracking-[0.18em] text-muted-foreground uppercase">
+              Full-day rates
+              <SampleBadge />
+            </p>
+            <h2 className="mt-2 font-display text-[clamp(2rem,9vw,2.75rem)] leading-[0.95] font-extrabold tracking-[-0.04em]">
+              A starting <em className="font-serif text-[var(--ember)] italic">figure</em>
+            </h2>
+            <p className="mt-2 text-sm text-muted-foreground">
+              These full-day amounts are sample rates. The quote you send is the one the studio confirms.
+            </p>
+          </div>
           <div ref={railRef} className="rate-rail overflow-hidden">
             {rail(true)}
           </div>
