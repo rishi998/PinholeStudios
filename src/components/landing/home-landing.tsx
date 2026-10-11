@@ -2,14 +2,12 @@ import Link from "next/link";
 
 import { ContactForm } from "@/components/features/contact-form";
 import { LotFilmstrip } from "@/components/landing/lot-filmstrip";
+import { RateParade } from "@/components/landing/rate-parade";
 import { Reveal } from "@/components/landing/reveal";
 import { Showreel } from "@/components/landing/showreel";
 import { WhatsAppLink } from "@/components/layout/whatsapp-link";
 import { Button } from "@/components/ui/button";
-import { SampleBadge } from "@/components/ui/sample-badge";
 import { showreel, studioPhotos } from "@/data/pinhole-media";
-import { studios } from "@/data/studios";
-import { formatInr } from "@/lib/quote";
 import { siteConfig } from "@/lib/site.config";
 
 const lot = [
@@ -92,38 +90,7 @@ export function HomeLanding() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[var(--page-width)] px-5 py-[var(--space-section)] md:px-8">
-        <Reveal className="max-w-[40ch]">
-          <p className="flex items-center gap-3 font-mono text-[0.72rem] tracking-[0.18em] text-muted-foreground uppercase">
-            Full-day rates
-            <SampleBadge />
-          </p>
-          <h2 className="mt-3 font-display text-[clamp(2.25rem,4.5vw,4rem)] leading-[0.95] font-extrabold tracking-[-0.04em]">
-            A starting <em className="font-serif text-[var(--ember)] italic">figure</em>
-          </h2>
-          <p className="mt-4 text-muted-foreground">
-            These full-day amounts are sample rates. The quote you send is the one the studio confirms.
-          </p>
-        </Reveal>
-        <ul className="mt-10 border-t border-border">
-          {studios.map((studio) => (
-            <li key={studio.slug} className="grid gap-2 border-b border-border py-5 sm:grid-cols-[1fr_auto] sm:items-baseline sm:gap-8">
-              <div>
-                <Link href={`/studios/${studio.slug}`} className="font-display text-2xl tracking-[-0.03em] underline-offset-4 hover:underline">
-                  {studio.name}
-                </Link>
-                <p className="mt-1 text-sm text-muted-foreground">{studio.suitability}</p>
-              </div>
-              <p className="font-mono text-sm tabular-nums">{formatInr(studio.pricing.fullDay)}</p>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-8">
-          <Button nativeButton={false} render={<Link href="/pricing" />} size="lg">
-            Get my quote
-          </Button>
-        </div>
-      </section>
+      <RateParade />
 
       <section className="border-t border-border bg-card">
         <div className="mx-auto grid w-full max-w-[var(--page-width)] gap-12 px-5 py-[var(--space-section)] md:px-8 lg:grid-cols-12">

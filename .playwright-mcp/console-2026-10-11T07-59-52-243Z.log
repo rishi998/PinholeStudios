@@ -1,0 +1,9 @@
+[    2067ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    2238ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    3095ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    3114ms] [LOG] [Fast Refresh] done in 466ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    7104ms] [WARNING] Image with src "/media/custom/studios/empty-studio/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    7108ms] [WARNING] Image with src "/media/custom/studios/green-screen-studio/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[    7110ms] [WARNING] Image with src "/media/custom/studios/the-house-setup/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   26567ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[   26619ms] [LOG] [Fast Refresh] done in 166ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776

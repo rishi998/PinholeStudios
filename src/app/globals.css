@@ -252,6 +252,143 @@
   }
 }
 
+.rate-pin {
+  display: none;
+}
+
+.rate-stage {
+  display: grid;
+  height: calc(100svh - 5rem);
+  align-content: center;
+}
+
+.rate-card {
+  width: min(78vw, 16.5rem);
+}
+
+@media (min-width: 768px) {
+  .rate-card {
+    width: min(28vw, 20rem);
+  }
+}
+
+.rate-doodle svg {
+  width: 100%;
+  height: 5.5rem;
+  fill: none;
+  stroke: var(--foreground);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.rate-fill {
+  fill: var(--ember);
+  stroke: var(--foreground);
+}
+
+.rate-green {
+  fill: #b7e3c4;
+}
+
+.rate-eye,
+.rate-lens {
+  fill: var(--foreground);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.rate-slate,
+.rate-cone,
+.rate-waves,
+.rate-sun,
+.rate-rays,
+.rate-frame,
+.rate-cyc {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rate-pin {
+    display: block;
+    height: 280svh;
+  }
+
+  .rate-stage {
+    position: sticky;
+    top: 5rem;
+  }
+
+  .rate-static {
+    display: none;
+  }
+
+  .rate-doodle.is-on .rate-slate {
+    animation: rate-slate 0.7s ease forwards;
+  }
+
+  .rate-doodle.is-on .rate-lens {
+    animation: rate-lens 0.6s ease forwards;
+  }
+
+  .rate-doodle.is-on .rate-cone,
+  .rate-doodle.is-on .rate-waves {
+    animation: rate-grow-x 0.7s ease forwards;
+  }
+
+  .rate-doodle.is-on .rate-sun {
+    animation: rate-lens 0.7s ease forwards;
+  }
+
+  .rate-doodle.is-on .rate-rays {
+    animation: rate-fade 0.6s ease forwards;
+  }
+
+  .rate-doodle.is-on .rate-cyc,
+  .rate-doodle.is-on .rate-frame {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+    animation: rate-draw 0.8s ease forwards;
+  }
+}
+
+@keyframes rate-slate {
+  to {
+    transform: rotate(-14deg);
+  }
+}
+
+@keyframes rate-lens {
+  to {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes rate-grow-x {
+  from {
+    transform: scaleX(0.4);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rate-fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rate-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .pinhole-intro {
   position: fixed;
   inset: 0;
