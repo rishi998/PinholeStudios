@@ -159,6 +159,60 @@
   }
 }
 
+.lot-pin-wrap {
+  display: none;
+}
+
+.lot-stage {
+  display: flex;
+  height: calc(100dvh - 5rem);
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lot-mark {
+  display: block;
+  width: 4.75rem;
+  aspect-ratio: 460 / 320;
+  overflow: hidden;
+  border-radius: 0.55rem;
+  background: #14110e;
+}
+
+.lot-logo {
+  width: calc(100% * 600 / 460);
+  height: auto;
+  max-width: none;
+}
+
+.lot-card {
+  width: min(46vw, 40rem);
+  aspect-ratio: 16 / 10;
+}
+
+@media (max-width: 1024px) {
+  .lot-card {
+    width: min(62vw, 36rem);
+  }
+}
+
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .lot-pin-wrap {
+    display: block;
+    height: 520vh;
+  }
+
+  .lot-stage {
+    position: sticky;
+    top: 5rem;
+  }
+
+  .lot-fallback {
+    display: none;
+  }
+}
+
 .pinhole-intro {
   position: fixed;
   inset: 0;

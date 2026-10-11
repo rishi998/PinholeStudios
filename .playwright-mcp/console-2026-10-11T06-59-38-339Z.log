@@ -615,3 +615,398 @@
 [  832860ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
 [  835565ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
 [  835669ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1711971ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714460ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714541ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714615ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714678ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714740ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714802ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714880ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1714958ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715021ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715083ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715147ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715208ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715271ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715335ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715401ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715462ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715525ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715587ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715653ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715717ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715779ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715856ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715919ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1715983ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716043ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716105ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716168ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716231ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716356ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716529ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716591ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716652ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716733ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716794ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716855ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716918ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1716984ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717043ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717105ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717169ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717232ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717293ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717355ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717418ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717478ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717541ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717604ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717667ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717731ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717793ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717856ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717920ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1717983ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718045ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718108ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718170ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718231ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718292ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718355ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718416ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718482ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718556ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718620ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718682ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718744ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718806ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718884ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1718946ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719008ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719071ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719132ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719194ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719255ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719319ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719382ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719460ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719523ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719588ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719650ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719714ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719776ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719840ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719903ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1719966ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720031ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720096ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720158ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720221ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720281ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720347ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720424ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720488ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720565ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720628ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720691ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720753ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720821ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720897ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1720971ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721050ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721113ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721177ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721239ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721302ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721365ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721428ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721489ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721566ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721629ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721690ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721754ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721816ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721879ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1721941ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722002ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722064ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722129ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722191ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722253ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722316ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722380ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722441ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722503ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722564ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722628ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722690ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722752ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722815ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722878ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1722941ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723002ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723064ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723128ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723190ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723253ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723317ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723379ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723443ms] [LOG] [Fast Refresh] done in 1937ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1723674ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1724840ms] [LOG] [Fast Refresh] done in 1132ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1726463ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1730021ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730193ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730245ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730278ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730363ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730425ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730487ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730557ms] [ERROR] ./src/components/landing/home-landing.tsx:70:15
+Error: Expected '</', got 'jsx text'
+  68 |             </figcaption>
+  69 |           </figure>
+> 70 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |       </section>
+     | ^^^^^^
+  72 |
+  73 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 pb-[var(--sp...
+  74 |         <div className="flex flex-col gap-6 border-t border-border pt-12 md:flex-row...
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1730781ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1731476ms] [LOG] [Fast Refresh] done in 794ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1731784ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1732191ms] [LOG] [Fast Refresh] done in 522ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1737344ms] [WARNING] The resource http://localhost:3000/_next/image?url=%2Fmedia%2Fcustom%2Fstudios%2Fempty-studio%2F01.jpg&w=640&q=75 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[ 1749865ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1750948ms] [ERROR] ./src/components/landing/home-landing.tsx:91:15
+Error: Expected '</', got 'jsx text'
+  89 |             ))}
+  90 |           </dl>
+> 91 |         </div>
+     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 92 |       </section>
+     | ^^^^^^
+  93 |
+  94 |       <section className="mx-auto w-full max-w-[var(--page-width)] px-5 py-[var(--sp...
+  95 |         <div className="max-w-[40ch]">
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1751175ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1751643ms] [LOG] [Fast Refresh] done in 89ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1751645ms] [LOG] [Fast Refresh] done in 89ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1751745ms] [ERROR] ./src/components/landing/home-landing.tsx:107:15
+Error: Expected '</', got 'jsx text'
+  105 |             These full-day amounts are sample rates. The quote you send is the one ...
+  106 |           </p>
+> 107 |         </div>
+      |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 108 |         <ul className="mt-10 border-t border-border">
+      | ^^^^^^^^
+  109 |           {studios.map((studio) => (
+  110 |             <li key={studio.slug} className="grid gap-2 border-b border-border py-5...
+  111 |               <div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1751842ms] [ERROR] ./src/components/landing/home-landing.tsx:107:15
+Error: Expected '</', got 'jsx text'
+  105 |             These full-day amounts are sample rates. The quote you send is the one ...
+  106 |           </p>
+> 107 |         </div>
+      |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 108 |         <ul className="mt-10 border-t border-border">
+      | ^^^^^^^^
+  109 |           {studios.map((studio) => (
+  110 |             <li key={studio.slug} className="grid gap-2 border-b border-border py-5...
+  111 |               <div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1751929ms] [ERROR] ./src/components/landing/home-landing.tsx:107:15
+Error: Expected '</', got 'jsx text'
+  105 |             These full-day amounts are sample rates. The quote you send is the one ...
+  106 |           </p>
+> 107 |         </div>
+      |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 108 |         <ul className="mt-10 border-t border-border">
+      | ^^^^^^^^
+  109 |           {studios.map((studio) => (
+  110 |             <li key={studio.slug} className="grid gap-2 border-b border-border py-5...
+  111 |               <div>
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/landing/home-landing.tsx
+    ./src/app/page.tsx @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:1052
+[ 1752163ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1754490ms] [LOG] [Fast Refresh] done in 1611ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1754845ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1755764ms] [LOG] [Fast Refresh] done in 1020ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1755767ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/manifest.webmanifest:0
+[ 1755770ms] [ERROR] Manifest fetch from http://localhost:3000/manifest.webmanifest failed, code 500 @ http://localhost:3000/:0
+[ 1758787ms] [WARNING] The resource http://localhost:3000/_next/image?url=%2Fmedia%2Fcustom%2Fstudios%2Fempty-studio%2F01.jpg&w=640&q=75 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[ 1768010ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1768325ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1804388ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1804501ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1805362ms] [WARNING] Image with src "/media/custom/studios/empty-studio/01.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1832151ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1832755ms] [LOG] [Fast Refresh] done in 646ms @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1840625ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1840723ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1841537ms] [WARNING] Image with src "/media/custom/studios/green-screen-studio/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1841573ms] [WARNING] Image with src "/media/custom/studios/the-house-setup/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1841604ms] [WARNING] Image with src "/media/custom/studios/white-cyclorama/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1841618ms] [WARNING] Image with src "/media/custom/studios/podcast-setup/01.png" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1841654ms] [WARNING] Image with src "/media/custom/studios/garden-area/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1841687ms] [WARNING] Image with src "/media/custom/studios/lawn-area/01.jpg" has "fill" prop and "sizes" prop of "100vw", but image is not rendered at full viewport width. Please adjust "sizes" to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1844812ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1844950ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1845345ms] [WARNING] You have Reduced Motion enabled on your device. Animations may not appear as expected.. For more information and steps for solving, visit https://motion.dev/troubleshooting/reduced-motion-disabled @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1934616ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
+[ 1934853ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/1ldn_next_dist_06gedf1._.js:776
