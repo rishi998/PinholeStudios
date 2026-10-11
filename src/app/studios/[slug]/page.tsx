@@ -158,7 +158,7 @@ function List({ title, items }: { title: string; items: string[] }) {
     <section>
       <h2 className="font-display text-2xl">{title}</h2>
       <ul className="mt-3 grid gap-2">
-        {items.map((item) => (
+        {[...new Set(items)].map((item) => (
           <li key={item} className="border-b border-border py-2 text-sm">
             {item}
           </li>
