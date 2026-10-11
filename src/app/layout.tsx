@@ -70,7 +70,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){try{if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.dataset.pinholeMotion='reduce';var q=new URLSearchParams(location.search);if(q.get('intro')==='1')return;if(sessionStorage.getItem('pinhole-intro-seen')==='1')document.documentElement.dataset.pinholeIntro='skip';}catch(e){}})();",
+              "(function(){try{sessionStorage.removeItem('pinhole-intro-seen');if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.dataset.pinholeMotion='reduce';}catch(e){}})();",
           }}
         />
         <AmbientBackground />

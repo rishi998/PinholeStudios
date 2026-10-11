@@ -178,6 +178,24 @@ html.pinhole-intro-lock body {
   overflow: hidden;
 }
 
+.pinhole-mark {
+  display: block;
+  width: clamp(7.5rem, 20vw, 11rem);
+  aspect-ratio: 460 / 320;
+  margin: 0 auto 1.35rem;
+  overflow: hidden;
+  border-radius: 0.85rem;
+  background: #14110e;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.pinhole-logo {
+  width: calc(100% * 600 / 460);
+  height: auto;
+  max-width: none;
+}
+
 .pinhole-word {
   display: flex;
   justify-content: center;
@@ -234,21 +252,32 @@ html.pinhole-intro-lock body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .pinhole-mark {
+    animation: pinhole-mark 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
   .pinhole-char {
-    animation: pinhole-char 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    animation-delay: calc(280ms + (var(--i) * 72ms));
+    animation: pinhole-char 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(1.6s + (var(--i) * 144ms));
   }
 
   .pinhole-line {
-    animation: pinhole-line 0.45s cubic-bezier(0.22, 1, 0.36, 1) 1.5s forwards;
+    animation: pinhole-line 0.9s cubic-bezier(0.22, 1, 0.36, 1) 4.04s forwards;
   }
 
   .pinhole-caption {
-    animation: pinhole-caption 0.5s cubic-bezier(0.22, 1, 0.36, 1) 1.62s forwards;
+    animation: pinhole-caption 1s cubic-bezier(0.22, 1, 0.36, 1) 4.28s forwards;
   }
 
   .pinhole-intro {
-    animation: pinhole-curtain 0.62s cubic-bezier(0.22, 1, 0.36, 1) 2.15s forwards;
+    animation: pinhole-curtain 1.24s cubic-bezier(0.22, 1, 0.36, 1) 5.34s forwards;
+  }
+}
+
+@keyframes pinhole-mark {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -280,6 +309,7 @@ html.pinhole-intro-lock body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .pinhole-mark,
   .pinhole-char,
   .pinhole-caption {
     opacity: 1;

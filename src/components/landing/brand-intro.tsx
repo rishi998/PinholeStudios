@@ -1,9 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
+import { pinholeLogo } from "@/data/pinhole-media";
+
 const word = "Pinhole";
-const storageKey = "pinhole-intro-seen";
 let seenInThisTab = false;
 
 function replayRequested() {
@@ -12,12 +14,7 @@ function replayRequested() {
 
 function alreadySeen() {
   if (replayRequested()) return false;
-  if (seenInThisTab) return true;
-  try {
-    return sessionStorage.getItem(storageKey) === "1";
-  } catch {
-    return false;
-  }
+  return seenInThisTab;
 }
 
 function unlockPage() {
@@ -26,11 +23,6 @@ function unlockPage() {
 
 function remember() {
   seenInThisTab = true;
-  try {
-    sessionStorage.setItem(storageKey, "1");
-  } catch {
-    // Session storage can be blocked. The in-memory flag still covers this tab.
-  }
   document.documentElement.dataset.pinholeIntro = "skip";
   unlockPage();
 }
@@ -53,7 +45,7 @@ export function BrandIntro() {
     const timer = window.setTimeout(() => {
       remember();
       setActive(false);
-    }, reduced ? 650 : 2780);
+    }, reduced ? 800 : 6600);
 
     return () => {
       window.clearTimeout(timer);
@@ -67,6 +59,9 @@ export function BrandIntro() {
     <div className="pinhole-intro" role="dialog" aria-label="Pinhole">
       <p className="sr-only">Pinhole</p>
       <div className="w-fit max-w-[calc(100vw-2rem)] text-center">
+        <span className="pinhole-mark" aria-hidden="true">
+          <Image src={pinholeLogo} alt="" width={600} height={320} className="pinhole-logo" priority />
+        </span>
         <p aria-hidden="true" className="pinhole-word">
           {word.split("").map((character, index) => (
             <span key={character + index} className="pinhole-char" style={{ ["--i" as string]: index }}>
