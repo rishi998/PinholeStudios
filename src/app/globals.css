@@ -164,19 +164,36 @@
 }
 
 .lot-stage {
-  display: flex;
-  height: calc(100dvh - 5rem);
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  height: calc(100svh - 5rem);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  align-content: center;
+  gap: clamp(0.75rem, 2vh, 1.25rem);
   overflow: hidden;
+  padding-block: clamp(0.5rem, 1.5vh, 1rem);
+}
+
+.lot-open,
+.lot-head,
+.lot-rail,
+.lot-copy {
+  opacity: 0;
+}
+
+.lot-open {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
 }
 
 .lot-mark {
   display: block;
-  width: 4.75rem;
+  width: clamp(8.5rem, 18vw, 13rem);
   aspect-ratio: 460 / 320;
   overflow: hidden;
-  border-radius: 0.55rem;
+  border-radius: 0.85rem;
   background: #14110e;
 }
 
@@ -186,21 +203,43 @@
   max-width: none;
 }
 
-.lot-card {
-  width: min(46vw, 40rem);
-  aspect-ratio: 16 / 10;
+.lot-rail {
+  min-height: 0;
+  overflow: hidden;
 }
 
-@media (max-width: 1024px) {
+.lot-card {
+  width: min(82vw, 17.5rem);
+  height: auto;
+  aspect-ratio: 3 / 2;
+  flex: none;
+}
+
+@media (min-width: 768px) {
   .lot-card {
-    width: min(62vw, 36rem);
+    width: min(34vw, 28rem);
   }
 }
 
-@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+@media (max-height: 520px) {
+  .lot-card {
+    width: min(46vw, 14rem);
+  }
+
+  .lot-head h2 {
+    font-size: 1.7rem;
+  }
+}
+
+.lot-card img {
+  object-fit: contain;
+  background: var(--card);
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .lot-pin-wrap {
     display: block;
-    height: 520vh;
+    height: 480svh;
   }
 
   .lot-stage {
@@ -208,7 +247,7 @@
     top: 5rem;
   }
 
-  .lot-fallback {
+  .lot-static {
     display: none;
   }
 }
